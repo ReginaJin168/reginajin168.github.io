@@ -813,12 +813,34 @@
     .awards-grid, .cert-grid, .activity-grid { gap: 1.25rem !important; }
     .award-card[style], .cert-card[style], .activity-card[style] { padding: 1.6rem !important; }
     .award-icon {
-      filter: none;
-      opacity: 1;
-      font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
-      font-variant-emoji: emoji;
+      width: 3.25rem;
+      height: 3.25rem;
+      display: inline-grid;
+      place-items: center;
+      filter: none !important;
+      opacity: 1 !important;
+      border: 1px solid transparent;
+      border-radius: 1rem;
       line-height: 1;
-      text-shadow: 0 8px 18px rgba(176, 121, 24, .18);
+    }
+    .award-icon i { font-size: 1.65rem; }
+    .award-icon-gold {
+      color: #b97800;
+      background: linear-gradient(145deg, #fff8cf, #f5c84b);
+      border-color: #e8b92d;
+      box-shadow: 0 10px 24px rgba(211, 152, 20, .24);
+    }
+    .award-icon-bronze {
+      color: #8a4525;
+      background: linear-gradient(145deg, #f7d2b7, #c97948);
+      border-color: #bd7044;
+      box-shadow: 0 10px 24px rgba(147, 79, 40, .20);
+    }
+    .award-icon-silver {
+      color: #657486;
+      background: linear-gradient(145deg, #f8fbff, #bdc8d5);
+      border-color: #aeb9c7;
+      box-shadow: 0 10px 24px rgba(93, 111, 131, .18);
     }
     .award-year-tag[style], .award-role[style] { color: var(--accent) !important; }
     .award-name[style], .cert-card div[style*="color: #1a1a1a"], .activity-card div[style*="color: #1a1a1a"] { color: #edf3f9 !important; }
@@ -2045,7 +2067,7 @@
   <div class="awards-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
     
     <div class="award-card" style="opacity: 1 !important; visibility: visible !important; border: 1px solid #eee; padding: 25px; background: #fff; display: flex; flex-direction: column;">
-      <div class="award-icon" style="font-size: 2rem;">🏆</div>
+      <div class="award-icon award-icon-gold" aria-label="Gold trophy"><i class="fa-solid fa-trophy" aria-hidden="true"></i></div>
       <div class="award-year-tag" style="color: #4A7862; font-weight: bold;">2024</div>
       <div class="award-name" style="color: #1a1a1a !important; font-weight: bold; font-size: 1.1rem; margin: 10px 0;">China National Grand Prize (1st Place)</div>
       <div class="award-org" style="color: #555 !important; font-size: 0.9rem; flex-grow: 1;">
@@ -2055,7 +2077,7 @@
     </div>
 
     <div class="award-card" style="opacity: 1 !important; visibility: visible !important; border: 1px solid #eee; padding: 25px; background: #fff; display: flex; flex-direction: column;">
-      <div class="award-icon" style="font-size: 2rem;">🥉</div>
+      <div class="award-icon award-icon-bronze" aria-label="Bronze medal"><i class="fa-solid fa-medal" aria-hidden="true"></i></div>
       <div class="award-year-tag" style="color: #4A7862; font-weight: bold;">2024</div>
       <div class="award-name" style="color: #1a1a1a !important; font-weight: bold; font-size: 1.1rem; margin: 10px 0;">China National (3rd Prize)</div>
       <div class="award-org" style="color: #555 !important; font-size: 0.9rem; flex-grow: 1;">
@@ -2065,7 +2087,7 @@
     </div>
 
     <div class="award-card" style="opacity: 1 !important; visibility: visible !important; border: 1px solid #eee; padding: 25px; background: #fff; display: flex; flex-direction: column;">
-      <div class="award-icon" style="font-size: 2rem;">🥈</div>
+      <div class="award-icon award-icon-silver" aria-label="Silver medal"><i class="fa-solid fa-medal" aria-hidden="true"></i></div>
       <div class="award-year-tag" style="color: #4A7862; font-weight: bold;">2024</div>
       <div class="award-name" style="color: #1a1a1a !important; font-weight: bold; font-size: 1.1rem; margin: 10px 0;">Zhejiang Provincial 2nd Prize</div>
       <div class="award-org" style="color: #555 !important; font-size: 0.9rem; flex-grow: 1;">
