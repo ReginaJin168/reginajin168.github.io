@@ -1340,10 +1340,23 @@
       border-radius: 50%;
       box-shadow: 0 0 0 28px rgba(255,255,255,.07), 0 0 0 56px rgba(255,255,255,.035);
     }
+    .william-icon {
+      position: absolute;
+      top: clamp(.85rem, 1.8vw, 1.25rem);
+      right: clamp(.85rem, 1.8vw, 1.25rem);
+      z-index: 2;
+      width: clamp(3.8rem, 7vw, 5.25rem);
+      aspect-ratio: 1;
+      object-fit: cover;
+      border: 1px solid rgba(255,255,255,.42);
+      border-radius: 26%;
+      box-shadow: 0 12px 28px rgba(22, 11, 45, .32);
+    }
     .william-official-label,
     .william-official-title,
     .william-official-bottom { position: relative; z-index: 1; }
     .william-official-label {
+      max-width: calc(100% - clamp(4.5rem, 8vw, 6rem));
       color: #fff1f7;
       font: 600 .62rem/1 'Space Grotesk', sans-serif;
       letter-spacing: .14em;
@@ -1848,6 +1861,7 @@
 
   <div class="project-img-wrap">
     <a class="william-official" href="https://www.iamwilliam.xyz" target="_blank" rel="noopener noreferrer" aria-label="Visit the William AI website">
+      <img class="william-icon" src="william-icon.png" alt="William AI purple cat icon">
       <span class="william-official-label">William · Private Alpha Complete</span>
       <span class="william-official-title">A thoughtful AI companion for emotional wellness</span>
       <span class="william-official-bottom">
