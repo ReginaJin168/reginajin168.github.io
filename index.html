@@ -1297,6 +1297,82 @@
       .product-heading h3::after { display: none; }
     }
 
+    .language-switch {
+      display: inline-flex;
+      align-items: center;
+      gap: .2rem;
+      padding: .2rem;
+      border: 1px solid rgba(44,80,100,.13);
+      border-radius: 9px;
+      background: rgba(255,255,255,.62);
+    }
+    .language-switch button {
+      min-width: 32px;
+      min-height: 30px;
+      padding: .35rem .5rem;
+      border: 0;
+      border-radius: 7px;
+      color: #667b89;
+      background: transparent;
+      font: 600 .6rem/1 'Space Grotesk', sans-serif;
+      cursor: pointer;
+    }
+    .language-switch button.active {
+      color: #fff;
+      background: #008e83;
+      box-shadow: 0 5px 14px rgba(0,142,131,.18);
+    }
+    .william-official {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: clamp(1rem, 2vw, 1.65rem);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      color: #f8f4ff;
+      text-decoration: none;
+      background:
+        radial-gradient(circle at 78% 18%, rgba(255, 206, 230, .55), transparent 30%),
+        radial-gradient(circle at 14% 85%, rgba(129, 116, 231, .60), transparent 38%),
+        linear-gradient(145deg, #27214b 0%, #7059a6 48%, #d490aa 100%);
+    }
+    .william-official::after {
+      content: '';
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      right: -38px;
+      bottom: -54px;
+      border: 1px solid rgba(255,255,255,.28);
+      border-radius: 50%;
+      box-shadow: 0 0 0 28px rgba(255,255,255,.07), 0 0 0 56px rgba(255,255,255,.035);
+    }
+    .william-official-label,
+    .william-official-title,
+    .william-official-bottom { position: relative; z-index: 1; }
+    .william-official-label {
+      color: #fff1f7;
+      font: 600 .62rem/1 'Space Grotesk', sans-serif;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .william-official-title {
+      margin-top: auto;
+      font: 500 clamp(1.1rem, 2vw, 1.45rem)/1.15 'Space Grotesk', sans-serif;
+      letter-spacing: -.03em;
+    }
+    .william-official-bottom {
+      margin-top: .65rem;
+      display: flex;
+      justify-content: space-between;
+      gap: .75rem;
+      color: rgba(255,255,255,.72);
+      font-size: .62rem;
+    }
+    .william-official-cta { color: #fff; font-weight: 700; white-space: nowrap; }
+
     /* =========================================================
        MOBILE LAYOUT — final overrides for phones and small tablets
        ========================================================= */
@@ -1364,6 +1440,8 @@
       }
       nav.menu-open .nav-links { display: flex; }
       .nav-links li, .nav-links a { width: 100%; }
+      .nav-links .language-switch { width: 100%; justify-content: center; margin-top: .25rem; }
+      .nav-links .language-switch button { width: auto; min-width: 72px; }
       .nav-links a {
         display: flex;
         min-height: 44px;
@@ -1479,6 +1557,10 @@
     <li><a href="#certifications">Certs</a></li>
     <li><a href="#publications">Publications</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li class="language-switch" aria-label="Language selector">
+      <button type="button" data-lang="en" class="active" aria-pressed="true">EN</button>
+      <button type="button" data-lang="zh" aria-pressed="false">中文</button>
+    </li>
     
     <li class="resume-item">
  <a href="cv.pdf" download="ReginaJinCV.pdf" class="resume-btn">
@@ -1622,6 +1704,30 @@
 
      <div class="timeline-item reveal">
     <div class="timeline-dot"></div>
+    <div class="timeline-date">Jul 2026 – Present</div>
+    <div class="timeline-role">Specialist of Region Expansion &amp; CDC (Intern)</div>
+    <div class="timeline-company">UniUni · Remote</div>
+    <ul class="timeline-bullets">
+      <li>Built a cross-border prospecting pipeline by screening approximately 5,000 logistics companies across North America and Europe and identifying decision-makers in operations, supply chain, and partnerships.</li>
+      <li>Executed approximately 3,500 targeted outreach attempts; converted all 3 responses into discovery meetings, achieving a 100% response-to-meeting conversion rate.</li>
+      <li>Qualified partnership interest and documented account intelligence to support regional expansion and last-mile logistics business development.</li>
+    </ul>
+  </div>
+
+     <div class="timeline-item reveal">
+    <div class="timeline-dot"></div>
+    <div class="timeline-date">May 2026 – Present</div>
+    <div class="timeline-role">Co-founder &amp; Product Lead</div>
+    <div class="timeline-company">William AI · Los Angeles, CA / Remote</div>
+    <ul class="timeline-bullets">
+      <li>Co-founded and led development of an AI-powered emotional wellness product combining guided AI support with community-based engagement.</li>
+      <li>Took the product from concept through Alpha testing; owned product requirements, software development, user feedback loops, and post-launch growth strategy.</li>
+      <li>Built the pre-launch community and acquired 2,000+ waitlist signups ahead of public release.</li>
+    </ul>
+  </div>
+
+     <div class="timeline-item reveal">
+    <div class="timeline-dot"></div>
     <div class="timeline-date">Mar 2026 – Present</div>
     <div class="timeline-role">Graduate Research Assistant</div>
     <div class="timeline-company">Spatial Sciences Institute, USC · Los Angeles, CA</div>
@@ -1738,6 +1844,43 @@
       </div>
     </div>
     <div class="projects-grid product-grid">
+
+<!-- William AI Emotional Wellness Platform -->
+<div class="project-card reveal">
+  <div class="project-cat">AI Wellness · Startup</div>
+  <div class="project-title">William — AI Emotional Wellness Platform</div>
+
+  <div class="project-meta-clean">
+    <div class="p-role">Co-founder / Product Lead</div>
+    <div class="p-date">May 2026 – Present</div>
+  </div>
+
+  <div class="project-img-wrap">
+    <a class="william-official" href="https://www.iamwilliam.xyz" target="_blank" rel="noopener noreferrer" aria-label="Visit the William AI website">
+      <span class="william-official-label">William · Private Alpha Complete</span>
+      <span class="william-official-title">A thoughtful AI companion for emotional wellness</span>
+      <span class="william-official-bottom">
+        <span>AI Support · Community · Personal Growth</span>
+        <span class="william-official-cta">Visit website ↗</span>
+      </span>
+    </a>
+  </div>
+
+  <div class="project-award-box">
+    <span class="project-award">2,000+ waitlist signups · Alpha testing completed</span>
+  </div>
+
+  <div class="project-description">
+    Co-founded and led the product from concept to a completed Alpha release. Own software development, user-needs discovery, community operations, and the post-launch product-led growth roadmap.
+  </div>
+
+  <div class="tags">
+    <span class="tag">AI Wellness</span>
+    <span class="tag">Product Development</span>
+    <span class="tag">Community</span>
+    <span class="tag">Growth</span>
+  </div>
+</div>
 
 <!-- GovTech AI Suite — Smart Evaluation & Fire Safety Cloud -->
      <div class="project-card reveal">
@@ -2129,17 +2272,231 @@
     <span>Spatial intelligence · product systems</span>
   </footer>
   <script>
+    const translations = {
+      "Projects": "项目",
+      "Education": "教育经历",
+      "Experience": "工作经历",
+      "Honors": "荣誉",
+      "Certs": "证书",
+      "Publications": "研究成果",
+      "Contact": "联系我",
+      "RESUME": "简历",
+      "Spatial Data Science · AI Product · GeoTech": "空间数据科学 · AI 产品 · 地理科技",
+      "Spatial Data Science": "空间数据科学",
+      "GeoTech": "地理科技",
+      "Product Manager": "产品经理",
+      "Analyst": "数据分析",
+      "Business": "商业拓展",
+      "I build at the intersection of geospatial intelligence, AI infrastructure, and product strategy, from satellite remote sensing pipelines to MaaS platform architecture. Driven by data, shaped by systems thinking.": "我专注于地理空间智能、AI 基础设施与产品战略的交叉领域，从卫星遥感数据管线到 MaaS 平台架构，以数据驱动决策，以系统思维塑造产品。",
+      "Get in Touch": "联系我",
+      "View Projects": "查看项目",
+      "DIGITAL AVATAR · ONLINE": "数字分身 · 在线",
+      "Years Exp.": "年经验",
+      "SCI Papers": "SCI 论文",
+      "Natl. Prize": "国家级奖项",
+      "03 — Education": "03 — 教育经历",
+      "Master of Science in Spatial Data Science": "空间数据科学理学硕士",
+      "University of Southern California (USC)": "南加州大学（USC）",
+      "Los Angeles, CA · Jan 2026 – Present": "美国洛杉矶 · 2026年1月至今",
+      "Bachelor of Science in Geographic Information Science": "地理信息科学理学学士",
+      "Hangzhou Normal University": "杭州师范大学",
+      "Hangzhou, China · Sep 2021 – Jun 2025": "中国杭州 · 2021年9月–2025年6月",
+      "Spatial Analysis": "空间分析",
+      "Machine Learning": "机器学习",
+      "Remote Sensing": "遥感",
+      "Data Engineering": "数据工程",
+      "Cartography": "地图学",
+      "Spatial Statistics": "空间统计",
+      "04 — Experience": "04 — 工作经历",
+      "Work Experience": "工作经历",
+      "Jul 2026 – Present": "2026年7月至今",
+      "Specialist of Region Expansion & CDC (Intern)": "区域拓展与 CDC 专员（实习）",
+      "UniUni · Remote": "UniUni · 远程",
+      "Built a cross-border prospecting pipeline by screening approximately 5,000 logistics companies across North America and Europe and identifying decision-makers in operations, supply chain, and partnerships.": "搭建跨境潜客开发管线，筛选北美及欧洲约 5,000 家物流企业，并定位运营、供应链及合作业务决策人。",
+      "Executed approximately 3,500 targeted outreach attempts; converted all 3 responses into discovery meetings, achieving a 100% response-to-meeting conversion rate.": "完成约 3,500 次定向商务触达，将获得的 3 个回复全部转化为需求探索会议，实现 100% 的回复到会议转化率。",
+      "Qualified partnership interest and documented account intelligence to support regional expansion and last-mile logistics business development.": "评估潜在合作意向并沉淀客户情报，为区域扩张及末端物流业务拓展提供支持。",
+      "May 2026 – Present": "2026年5月至今",
+      "Co-founder & Product Lead": "联合创始人兼产品负责人",
+      "William AI · Los Angeles, CA / Remote": "William AI · 美国洛杉矶 / 远程",
+      "Co-founded and led development of an AI-powered emotional wellness product combining guided AI support with community-based engagement.": "联合创立并主导开发 AI 情绪疗愈产品，将引导式 AI 支持与社群互动相结合。",
+      "Took the product from concept through Alpha testing; owned product requirements, software development, user feedback loops, and post-launch growth strategy.": "推动产品从概念阶段完成 Alpha 测试，负责产品需求、软件开发、用户反馈闭环及上线后的增长策略。",
+      "Built the pre-launch community and acquired 2,000+ waitlist signups ahead of public release.": "搭建产品发布前社群，在正式上线前获得 2,000+ 名候补用户。",
+      "Mar 2026 – Present": "2026年3月至今",
+      "Graduate Research Assistant": "研究生科研助理",
+      "Spatial Sciences Institute, USC · Los Angeles, CA": "南加州大学空间科学研究院 · 美国洛杉矶",
+      "Developing interactive GIS Web Applications using React and Mapbox/ArcGIS API to visualize complex spatial datasets for urban research.": "使用 React 与 Mapbox/ArcGIS API 开发交互式 GIS Web 应用，为城市研究可视化复杂空间数据。",
+      "Architecting spatial data pipelines and optimizing PostGIS/PostgreSQL databases, improving query performance for large-scale geographic features.": "设计空间数据管线并优化 PostGIS/PostgreSQL 数据库，提升大规模地理要素的查询性能。",
+      "Collaborating with faculty researchers to translate spatial analytical models into intuitive UI/UX components, supporting data-driven decision making.": "与教师研究团队合作，将空间分析模型转化为直观的 UI/UX 组件，支持数据驱动决策。",
+      "Jun 2025 – Dec 2025": "2025年6月–2025年12月",
+      "Product Manager (Full-time)": "产品经理（全职）",
+      "Huaxin Consulting Co., Ltd. · Hangzhou, China": "华信咨询设计研究院有限公司 · 中国杭州",
+      "Led end to end lifecycle of 3 digital products; coordinated cross departmental alignment and achieved 100% on time delivery with 90% client satisfaction.": "负责 3 个数字化产品的端到端生命周期，协调跨部门协作，实现 100% 按时交付与 90% 客户满意度。",
+      "Seconded to China Telecom AI Co. as PM for the \"Xirang\" MaaS project; resolved 12+ critical cross system compatibility and permission issues, accelerating module integration by 3 days.": "借调至中国电信人工智能公司担任“息壤”MaaS 项目经理，解决 12+ 项跨系统兼容与权限问题，使模块集成提前 3 天完成。",
+      "Represented the company in English technical pitches to government funds in Saudi Arabia and Brazil, securing 2 international cooperation agreements.": "代表公司向沙特政府基金及巴西客户进行英文技术方案汇报，促成 2 项国际合作协议。",
+      "Mar 2025 – May 2025": "2025年3月–2025年5月",
+      "Intelligent Solution Engineer (Intern)": "智能解决方案工程师（实习）",
+      "Assisted in ToG government solution requirements; streamlined functional checklists for 2 major projects and supported initial proposal outputs.": "参与 ToG 政务解决方案需求工作，梳理 2 个重点项目的功能清单并支持初步方案输出。",
+      "Participated in grain and oil industry exhibitions, delivering presales product presentations and acquiring 3 groups of government client leads.": "参与粮油行业展会并进行售前产品演示，获得 3 组政府客户线索。",
+      "Dec 2024 – Mar 2025": "2024年12月–2025年3月",
+      "AI Development Engineer (Intern)": "AI 开发工程师（实习）",
+      "Designed unstructured text tokenization rules on 2,000,000+ records for a Gov GenAI model; improved Precision & Recall by 12%.": "为政务生成式 AI 模型设计非结构化文本切分规则，处理 2,000,000+ 条记录，使精确率与召回率提升 12%。",
+      "Developed a distributed Java crawler for 31 bidding platforms, successfully bypassing complex antiscraping mechanisms.": "开发覆盖 31 个招投标平台的分布式 Java 爬虫，解决复杂反爬机制问题。",
+      "Built Python validation scripts achieving <1% amount error and 90% clause coverage for bidding monitoring.": "构建 Python 校验脚本，实现招投标监测金额误差低于 1%、条款覆盖率达到 90%。",
+      "Jun 2024 – Sep 2024": "2024年6月–2024年9月",
+      "Spatial Data Analyst (Intern)": "空间数据分析师（实习）",
+      "Ouhai Surveying and Mapping Institute · Wenzhou, China": "瓯海测绘与地理信息院 · 中国温州",
+      "Processed 100GB+ multi source satellite remote sensing data using Python; produced 20+ visualization dashboards.": "使用 Python 处理 100GB+ 多源卫星遥感数据，并制作 20+ 个可视化看板。",
+      "Developed spatial models based on ArcGIS, increasing land area calculation efficiency by 30% to support government planning decisions.": "基于 ArcGIS 开发空间模型，将土地面积计算效率提升 30%，支持政府规划决策。",
+      "02 — Selected Work": "02 — 精选项目",
+      "Selected Work": "精选项目",
+      "TRACK 02": "方向 02",
+      "Project": "项目管理",
+      "Project execution, stakeholder alignment, and cross-team delivery.": "项目执行、利益相关方协同与跨团队交付。",
+      "Project Delivery": "项目交付",
+      "Telecom \"Xirang\" MaaS Platform": "中国电信“息壤”MaaS 平台",
+      "Project Manager": "项目经理",
+      "Aug 2025 – Nov 2025": "2025年8月–2025年11月",
+      "Tianyi Cloud · Official": "天翼云 · 官方网站",
+      "Xirang Integrated Intelligent Computing Platform": "息壤一体化智能计算平台",
+      "Compute · Platform · Data · Model · Application": "算力 · 平台 · 数据 · 模型 · 应用",
+      "View website ↗": "访问网站 ↗",
+      "Co-led end-to-end project delivery between the MaaS layer and AI infrastructure; coordinated development sprints across 8 workstreams and delivered key modules 3 days ahead of schedule.": "共同负责 MaaS 层与 AI 基础设施之间的端到端项目交付，协调 8 条工作流的开发迭代，关键模块提前 3 天交付。",
+      "Sprint Management": "迭代管理",
+      "TRACK 01": "方向 01",
+      "Product": "产品",
+      "Software products, intelligent systems, and spatial data solutions.": "软件产品、智能系统与空间数据解决方案。",
+      "AI Wellness · Startup": "AI 疗愈 · 创业项目",
+      "William — AI Emotional Wellness Platform": "William — AI 情绪疗愈平台",
+      "Co-founder / Product Lead": "联合创始人 / 产品负责人",
+      "William · Private Alpha Complete": "William · 已完成内部 Alpha 测试",
+      "A thoughtful AI companion for emotional wellness": "有温度的 AI 情绪疗愈伙伴",
+      "AI Support · Community · Personal Growth": "AI 支持 · 社群 · 个人成长",
+      "Visit website ↗": "访问网站 ↗",
+      "2,000+ waitlist signups · Alpha testing completed": "2,000+ 候补用户 · 已完成 Alpha 测试",
+      "Co-founded and led the product from concept to a completed Alpha release. Own software development, user-needs discovery, community operations, and the post-launch product-led growth roadmap.": "联合创立并推动产品从概念走向 Alpha 版本，负责软件开发、用户需求洞察、社群运营以及上线后的产品增长路线。",
+      "AI Wellness": "AI 疗愈",
+      "Product Development": "产品开发",
+      "Community": "社群运营",
+      "Growth": "用户增长",
+      "GovTech": "政务科技",
+      "GovTech AI Suite — Smart Evaluation & Fire Safety Cloud": "政务 AI 套件 — 智能评审与消防安全云",
+      "Jul 2025 – Dec 2025": "2025年7月–2025年12月",
+      "Developed AI driven fire safety assessment modules and cloud infrastructure for government applications.": "面向政务应用开发 AI 驱动的消防安全评估模块与云端基础设施。",
+      "Cloud AI": "云端 AI",
+      "Autonomous Systems": "自主智能系统",
+      "Autonomous Inspection System": "自主巡检系统",
+      "Air ground integrated inspection and dispatch command center featuring multi robot coordination, real time sensor monitoring, and AI driven anomaly detection across industrial facilities.": "构建空地一体化巡检调度指挥中心，支持多机器人协同、实时传感器监测与工业场景 AI 异常识别。",
+      "AI Enterprise Solutions": "企业 AI 解决方案",
+      "Intelligent Tender Management & Evaluation System": "智能招投标管理与评审系统",
+      "Jun 2025 – Sep 2025": "2025年6月–2025年9月",
+      "Designed an AI powered tender management platform for enterprise and government clients. Key features include automated generation of tailored bidding documents, AI driven parsing and automated scoring of vendor submissions, original document cross referencing, intelligent plagiarism detection, and real time vendor ranking.": "为企业和政府客户设计 AI 招投标管理平台，核心功能包括定制标书自动生成、投标文件 AI 解析与自动评分、原文交叉核验、智能查重及供应商实时排名。",
+      "Tender Management": "招投标管理",
+      "Eco-Remote Sensing": "生态遥感",
+      "Marine Eco-Remote Sensing Big Data System": "海洋生态遥感大数据系统",
+      "Core Member / Product Manager / Data Analyst": "核心成员 / 产品经理 / 数据分析师",
+      "Jun 2024 – Jan 2025": "2024年6月–2025年1月",
+      "🏆 National Grand Prize · 19th Challenge Cup (Top 1% of 7,000+ Teams)": "🏆 国家级特等奖 · 第十九届“挑战杯”（7,000+ 支队伍前 1%）",
+      "Optimized LSTM predictive models (+10% forecasting accuracy); processed 100GB+ spatial datasets. Coordinated cross functional delivery of all system modules.": "优化 LSTM 预测模型，使预测准确率提升 10%；处理 100GB+ 空间数据，并协调系统各模块的跨职能交付。",
+      "Big Data": "大数据",
+      "Smart Systems": "智能系统",
+      "Intelligent UAV Collaborative Management System": "智能无人机协同管理系统",
+      "Team Leader / Product Manager": "团队负责人 / 产品经理",
+      "Jul 2023 – Jun 2024": "2023年7月–2024年6月",
+      "🏆 National Third Prize · 2024 (Top 3% of 8,801 Teams)": "🏆 国家级三等奖 · 2024（8,801 支队伍前 3%）",
+      "Led market research and system architecture design for large scale drone fleet management. Implemented collaborative mission planning algorithms and real time command protocols for cross regional UAV operations.": "负责大型无人机集群管理的市场调研与系统架构设计，实现协同任务规划算法及跨区域无人机实时指挥协议。",
+      "Fleet Coordination": "集群协同",
+      "System Design": "系统设计",
+      "05 — Honors": "05 — 荣誉奖项",
+      "Awards & Recognition": "荣誉与奖项",
+      "China National Grand Prize (1st Place)": "中国国家级特等奖（第一名）",
+      "19th \"Challenge Cup\" Special Competition · Ranked 1% among 7,000+ national teams.": "第十九届“挑战杯”专项赛 · 全国 7,000+ 支队伍前 1%。",
+      "CORE MEMBER": "核心成员",
+      "China National (3rd Prize)": "中国国家级三等奖",
+      "China University Service Outsourcing Innovation & Entrepreneurship Competition · Ranked 3% among 8,801 national teams.": "中国大学生服务外包创新创业大赛 · 全国 8,801 支队伍前 3%。",
+      "TEAM LEADER": "团队负责人",
+      "Zhejiang Provincial 2nd Prize": "浙江省二等奖",
+      "14th National University E-commerce \"Innovation, Creativity & Entrepreneurship\" (Sanchuang) Challenge.": "第十四届全国大学生电子商务“创新、创意及创业”挑战赛。",
+      "07 — Research & Publications": "07 — 研究与出版",
+      "Journal Publications & Software Copyrights": "学术论文与软件著作权",
+      "Journal Publications": "学术论文",
+      "CO-AUTHOR": "共同作者",
+      "Software Copyrights": "软件著作权",
+      "LEAD AUTHOR": "第一作者",
+      "06 — Certifications": "06 — 证书",
+      "Certifications": "证书",
+      "Graduate Admissions": "研究生入学考试",
+      "GRE General Test": "GRE 通用考试",
+      "Score 326": "总分 326",
+      "VALID": "有效",
+      "ETS Certified · Score Report Available": "ETS 官方成绩 · 可提供成绩单",
+      "Emerging Technology": "新兴技术",
+      "Generative AI Leader": "生成式 AI 领导力项目",
+      "EXPECTED MARCH 2026": "预计 2026 年 3 月完成",
+      "08 — Activities": "08 — 社会活动",
+      "Public Engagement & Leadership": "公众参与与领导力",
+      "19th Asian Games Theme Song MV": "第十九届亚运会主题曲 MV",
+      "Selected as a Performance Participant for the official theme song music video and torch relay promotional filming. Recognized for outstanding performance by the Organizing Committee.": "入选官方主题曲 MV 及火炬传递宣传片表演人员，并因突出表现获得组委会认可。",
+      "Organizer: HAGOC (Hangzhou Asian Games Organizing Committee)": "主办方：杭州亚运会组委会（HAGOC）",
+      "08 — CONTACT": "08 — 联系我",
+      "Let's": "期待",
+      "Connect": "与你连接",
+      "Open to research collaborations, internships, and conversations about geospatial AI, product strategy, and anything in between.": "期待科研合作、实习机会，以及关于地理空间 AI、产品战略与更多领域的交流。",
+      "Spatial intelligence · product systems": "空间智能 · 产品系统"
+    };
+
+    const translatableTextNodes = [];
+    const textWalker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+      acceptNode(node) {
+        if (node.parentElement?.closest('.language-switch, script, style')) return NodeFilter.FILTER_REJECT;
+        const key = node.nodeValue.trim().replace(/\s+/g, ' ');
+        return translations[key] ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+      }
+    });
+    while (textWalker.nextNode()) {
+      const node = textWalker.currentNode;
+      const key = node.nodeValue.trim().replace(/\s+/g, ' ');
+      translatableTextNodes.push({
+        node,
+        english: node.nodeValue,
+        chinese: `${node.nodeValue.match(/^\s*/)[0]}${translations[key]}${node.nodeValue.match(/\s*$/)[0]}`
+      });
+    }
+
+    let currentLanguage = 'en';
+    const setLanguage = language => {
+      currentLanguage = language === 'zh' ? 'zh' : 'en';
+      translatableTextNodes.forEach(entry => {
+        entry.node.nodeValue = currentLanguage === 'zh' ? entry.chinese : entry.english;
+      });
+      document.documentElement.lang = currentLanguage === 'zh' ? 'zh-CN' : 'en';
+      document.title = currentLanguage === 'zh' ? 'Regina Jin — 空间数据科学与 AI 产品' : 'Regina Jin — Spatial Data Scientist';
+      document.querySelectorAll('.language-switch button').forEach(button => {
+        const active = button.dataset.lang === currentLanguage;
+        button.classList.toggle('active', active);
+        button.setAttribute('aria-pressed', String(active));
+      });
+      try { localStorage.setItem('site-language', currentLanguage); } catch (error) {}
+    };
+    document.querySelectorAll('.language-switch button').forEach(button => {
+      button.addEventListener('click', () => setLanguage(button.dataset.lang));
+    });
+    let savedLanguage = 'en';
+    try { savedLanguage = localStorage.getItem('site-language') || 'en'; } catch (error) {}
+    setLanguage(savedLanguage);
+
     const navigation = document.querySelector('nav');
     const menuToggle = document.querySelector('.mobile-menu-toggle');
     const closeMobileMenu = () => {
       navigation?.classList.remove('menu-open');
       menuToggle?.setAttribute('aria-expanded', 'false');
-      menuToggle?.setAttribute('aria-label', 'Open navigation menu');
+      menuToggle?.setAttribute('aria-label', currentLanguage === 'zh' ? '打开导航菜单' : 'Open navigation menu');
     };
     menuToggle?.addEventListener('click', () => {
       const isOpen = navigation.classList.toggle('menu-open');
       menuToggle.setAttribute('aria-expanded', String(isOpen));
-      menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+      menuToggle.setAttribute('aria-label', isOpen
+        ? (currentLanguage === 'zh' ? '关闭导航菜单' : 'Close navigation menu')
+        : (currentLanguage === 'zh' ? '打开导航菜单' : 'Open navigation menu'));
     });
     document.querySelectorAll('.nav-links a').forEach(link => link.addEventListener('click', closeMobileMenu));
     document.addEventListener('keydown', event => {
