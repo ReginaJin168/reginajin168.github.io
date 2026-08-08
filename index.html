@@ -812,7 +812,14 @@
 
     .awards-grid, .cert-grid, .activity-grid { gap: 1.25rem !important; }
     .award-card[style], .cert-card[style], .activity-card[style] { padding: 1.6rem !important; }
-    .award-icon { filter: grayscale(1); opacity: .8; }
+    .award-icon {
+      filter: none;
+      opacity: 1;
+      font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+      font-variant-emoji: emoji;
+      line-height: 1;
+      text-shadow: 0 8px 18px rgba(176, 121, 24, .18);
+    }
     .award-year-tag[style], .award-role[style] { color: var(--accent) !important; }
     .award-name[style], .cert-card div[style*="color: #1a1a1a"], .activity-card div[style*="color: #1a1a1a"] { color: #edf3f9 !important; }
     .award-org[style], .activity-card div[style*="color: #555"], .cert-card div[style*="color: #666"] { color: #8999ad !important; }
