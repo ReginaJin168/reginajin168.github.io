@@ -4,7 +4,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Regina Jin — Spatial Data Scientist</title>
+  <title>Regina Jin | Product Manager and Growth Strategist</title>
+  <meta name="description" content="Regina Jin is a product manager and growth strategist with experience in AI products, user growth, technical delivery, and international market expansion.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
@@ -246,7 +247,7 @@
     .timeline-company { font-size: 0.82rem; color: var(--muted); margin-bottom: 0.8rem; font-weight: 500; }
     .timeline-bullets { list-style: none; }
     .timeline-bullets li { font-size: 0.88rem; line-height: 1.85; color: #555; padding-left: 1rem; position: relative; margin-bottom: 0.3rem; }
-    .timeline-bullets li::before { content: '—'; position: absolute; left: 0; color: var(--accent2); }
+    .timeline-bullets li::before { content: '•'; position: absolute; left: 0; color: var(--accent2); }
 
    /* --- PROJECTS 整体布局 --- */
 .projects { background: var(--white); }
@@ -507,7 +508,7 @@
     }
 
     /* =========================================================
-       2026 TECHNOLOGY REDESIGN — spatial intelligence system
+       2026 TECHNOLOGY REDESIGN: spatial intelligence system
        ========================================================= */
     :root {
       --ink: #f4f7fb;
@@ -912,7 +913,7 @@
     }
 
     /* =========================================================
-       LIGHT SPATIAL TECH — brighter, clearer, more distinctive
+       LIGHT SPATIAL TECH: brighter, clearer, more distinctive
        ========================================================= */
     :root {
       --ink: #102331;
@@ -1407,7 +1408,174 @@
     .william-official-cta { color: #fff; font-weight: 700; white-space: nowrap; }
 
     /* =========================================================
-       MOBILE LAYOUT — final overrides for phones and small tablets
+       PRODUCT + GROWTH IMPACT
+       ========================================================= */
+    .impact {
+      --spot-x: 86%;
+      --spot-y: 10%;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at var(--spot-x) var(--spot-y), rgba(37,205,183,.22), transparent 30%),
+        linear-gradient(145deg, #0d2430 0%, #102f39 54%, #0f3c3c 100%) !important;
+      color: #f3fbfb;
+      transition: background-position .18s ease;
+    }
+    .impact::before {
+      content: '';
+      position: absolute;
+      width: 440px;
+      height: 440px;
+      right: -210px;
+      top: -210px;
+      border: 1px solid rgba(126,243,222,.18);
+      border-radius: 50%;
+      box-shadow: 0 0 0 54px rgba(126,243,222,.035), 0 0 0 108px rgba(126,243,222,.018);
+      pointer-events: none;
+    }
+    .impact .section-header { border-color: rgba(210,244,241,.18); }
+    .impact .section-num { color: #7ef3de; }
+    .impact .section-title { max-width: 760px; color: #f5fbfc !important; }
+    .impact-intro {
+      max-width: 760px;
+      margin: -1.35rem 0 3rem;
+      color: rgba(224,241,243,.72);
+      font-size: 1rem;
+      line-height: 1.9;
+    }
+    .impact-metrics {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      margin-bottom: 1.25rem;
+      border: 1px solid rgba(210,244,241,.16);
+      border-radius: 22px;
+      overflow: hidden;
+      background: rgba(255,255,255,.045);
+      backdrop-filter: blur(16px);
+    }
+    .impact-metric {
+      min-height: 190px;
+      padding: 1.7rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-right: 1px solid rgba(210,244,241,.14);
+      transition: background .25s ease, transform .25s ease;
+    }
+    .impact-metric:last-child { border-right: 0; }
+    .impact-metric:hover { background: rgba(126,243,222,.08); }
+    .metric-value {
+      color: #7ef3de;
+      font: 500 clamp(2.2rem, 4vw, 3.6rem)/1 'Space Grotesk', sans-serif;
+      letter-spacing: -.07em;
+    }
+    .metric-label {
+      margin-top: 1.6rem;
+      color: #f0f7f8;
+      font: 600 .72rem/1.4 'Space Grotesk', sans-serif;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+    .metric-note { margin-top: .55rem; color: rgba(224,241,243,.58); font-size: .76rem; line-height: 1.55; }
+    .impact-stories {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.25rem;
+    }
+    .impact-story {
+      position: relative;
+      min-height: 285px;
+      padding: 2rem;
+      border: 1px solid rgba(210,244,241,.14);
+      border-radius: 22px;
+      background: linear-gradient(160deg, rgba(255,255,255,.075), rgba(255,255,255,.025));
+      transition: transform .3s ease, border-color .3s ease, background .3s ease;
+    }
+    .impact-story:hover {
+      transform: translateY(-6px);
+      border-color: rgba(126,243,222,.45);
+      background: linear-gradient(160deg, rgba(126,243,222,.11), rgba(255,255,255,.035));
+    }
+    .story-index {
+      display: inline-flex;
+      margin-bottom: 2.5rem;
+      color: #7ef3de;
+      font: 600 .65rem/1 'Space Grotesk', sans-serif;
+      letter-spacing: .16em;
+    }
+    .impact-story h3 {
+      margin-bottom: .85rem;
+      color: #f8fcfc;
+      font: 500 1.3rem/1.2 'Space Grotesk', sans-serif;
+      letter-spacing: -.035em;
+    }
+    .impact-story p { color: rgba(224,241,243,.66); font-size: .86rem; line-height: 1.75; }
+    .story-tags { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: 1.4rem; }
+    .story-tag {
+      padding: .38rem .65rem;
+      border: 1px solid rgba(126,243,222,.18);
+      border-radius: 999px;
+      color: rgba(235,250,249,.8);
+      background: rgba(126,243,222,.055);
+      font: 500 .59rem/1 'Space Grotesk', sans-serif;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    /* Interactive polish */
+    .scroll-progress {
+      position: fixed;
+      inset: 0 auto auto 0;
+      z-index: 2000;
+      width: var(--scroll-progress, 0%);
+      height: 3px;
+      background: linear-gradient(90deg, #00a99a, #7ef3de, #526cff);
+      box-shadow: 0 0 14px rgba(0,169,154,.42);
+      pointer-events: none;
+    }
+    .interactive-card {
+      --tilt-x: 0deg;
+      --tilt-y: 0deg;
+      --pointer-x: 50%;
+      --pointer-y: 50%;
+      isolation: isolate;
+      will-change: transform;
+    }
+    .interactive-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      border-radius: inherit;
+      background: radial-gradient(circle at var(--pointer-x) var(--pointer-y), rgba(126,243,222,.16), transparent 34%);
+      opacity: 0;
+      transition: opacity .25s ease;
+      pointer-events: none;
+    }
+    .interactive-card:hover::after { opacity: 1; }
+    .interactive-card > * { position: relative; z-index: 1; }
+
+    @media (hover: hover) and (pointer: fine) {
+      .impact-story.reveal.visible.interactive-card,
+      .project-card.reveal.visible.interactive-card {
+        transform: perspective(950px) rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
+        transition: transform .18s ease, border-color .3s ease, box-shadow .3s ease, background .3s ease;
+      }
+      .impact-story.reveal.visible.interactive-card:hover,
+      .project-card.reveal.visible.interactive-card:hover {
+        transform: perspective(950px) translateY(-7px) rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
+      }
+    }
+
+    @media (max-width: 980px) {
+      .impact-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .impact-metric:nth-child(2) { border-right: 0; }
+      .impact-metric:nth-child(-n+2) { border-bottom: 1px solid rgba(210,244,241,.14); }
+      .impact-stories { grid-template-columns: 1fr; }
+      .impact-story { min-height: auto; }
+    }
+
+    /* =========================================================
+       MOBILE LAYOUT: final overrides for phones and small tablets
        ========================================================= */
     .mobile-menu-toggle {
       display: none;
@@ -1523,6 +1691,23 @@
       .hero-social-icons > a { min-width: 46px; justify-content: center; padding-right: 6px !important; }
       .hero-social-icons > div { gap: .55rem !important; }
 
+      .impact-intro { margin-top: -.7rem; margin-bottom: 2rem; font-size: .9rem; }
+      .impact-metrics { grid-template-columns: 1fr; border-radius: 18px; }
+      .impact-metric {
+        min-height: 145px;
+        padding: 1.35rem;
+        border-right: 0;
+        border-bottom: 1px solid rgba(210,244,241,.14);
+      }
+      .impact-metric:nth-child(2) { border-right: 0; }
+      .impact-metric:nth-child(-n+2) { border-bottom: 1px solid rgba(210,244,241,.14); }
+      .impact-metric:last-child { border-bottom: 0; }
+      .metric-value { font-size: 2.5rem; }
+      .metric-label { margin-top: 1rem; }
+      .impact-stories { gap: .85rem; }
+      .impact-story { padding: 1.45rem; border-radius: 18px; }
+      .story-index { margin-bottom: 1.6rem; }
+
       .section-header { margin-bottom: 2rem; padding-bottom: 1rem; }
       .section-title, .section-header .section-title[style] {
         font-size: clamp(2rem, 10vw, 2.7rem);
@@ -1575,6 +1760,7 @@
   </style>
 </head>
 <body>
+  <div class="scroll-progress" aria-hidden="true"></div>
 
 
 
@@ -1583,11 +1769,12 @@
   <a href="#home" class="nav-logo">Regina Jin</a>
   <button class="mobile-menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation"><span></span></button>
   <ul class="nav-links" id="primary-navigation">
+    <li><a href="#impact">Impact</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#education">Education</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#honors-awards">Honors</a></li>
-    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#certifications">Credentials</a></li>
     <li><a href="#publications">Publications</a></li>
     <li><a href="#contact">Contact</a></li>
     <li class="language-switch" aria-label="Language selector">
@@ -1605,13 +1792,13 @@
 
   <section class="hero" id="home">
     <div class="hero-left">
-      <p class="hero-tag">Spatial Data Science · AI Product · GeoTech</p>
+      <p class="hero-tag">Product Management · User Growth · AI &amp; Data</p>
       <h1 class="hero-name">Regina<br><em>Jin</em></h1>
-      <p class="hero-subtitle">Spatial Data Science &nbsp;|&nbsp; GeoTech<br>Product Manager &nbsp;|&nbsp; Analyst &nbsp;|&nbsp; Business</p>
+      <p class="hero-subtitle">Product Manager &nbsp;|&nbsp; User Growth<br>AI Products &nbsp;|&nbsp; Community Building &nbsp;|&nbsp; Market Expansion</p>
       <p class="hero-desc">
-        I build at the intersection of geospatial intelligence, AI infrastructure, and product strategy,
-        from satellite remote sensing pipelines to MaaS platform architecture.
-        Driven by data, shaped by systems thinking.
+        I translate complex user needs into well-defined products and measurable growth strategies.
+        My experience includes advancing William AI from concept to alpha with more than 2,000 waitlist signups,
+        leading end-to-end digital product delivery, and supporting international market expansion.
       </p>
       <div class="hero-cta">
         <a href="#contact" class="btn-primary">Get in Touch</a>
@@ -1625,16 +1812,16 @@
       </div>
       <div class="hero-stats">
   <div class="stat">
-    <span class="stat-num">3+</span>
-    <span class="stat-label">Years Exp.</span>
+    <span class="stat-num">3</span>
+    <span class="stat-label">Products Led</span>
   </div>
   <div class="stat">
-    <span class="stat-num">2</span>
-    <span class="stat-label">SCI Papers</span>
+    <span class="stat-num">2K+</span>
+    <span class="stat-label">Waitlist Signups</span>
   </div>
   <div class="stat">
-    <span class="stat-num">2×</span>
-    <span class="stat-label">Natl. Prize</span>
+    <span class="stat-num">100%</span>
+    <span class="stat-label">On-Time Delivery</span>
   </div>
 </div>
 
@@ -1675,13 +1862,77 @@
     </div>
   </section>
 
+  <!-- PRODUCT + GROWTH IMPACT -->
+  <section class="impact" id="impact">
+    <div class="section-header reveal">
+      <span class="section-num">01 / Product and Growth</span>
+      <h2 class="section-title">Turning product insight<br>into measurable growth.</h2>
+    </div>
+    <p class="impact-intro reveal">
+      I work across the full product lifecycle, from user research and product definition to cross-functional delivery
+      and go-to-market execution. This experience helps me connect customer needs, technical constraints, and business outcomes.
+    </p>
+
+    <div class="impact-metrics reveal">
+      <article class="impact-metric">
+        <span class="metric-value" data-count="3">3</span>
+        <div>
+          <div class="metric-label">Digital products led</div>
+          <p class="metric-note">Managed the end-to-end lifecycle of three digital products, achieving 100% on-time delivery and 90% client satisfaction.</p>
+        </div>
+      </article>
+      <article class="impact-metric">
+        <span class="metric-value" data-count="2000" data-compact="true" data-suffix="+">2K+</span>
+        <div>
+          <div class="metric-label">Waitlist signups</div>
+          <p class="metric-note">Built William AI's early user community and feedback program before public launch.</p>
+        </div>
+      </article>
+      <article class="impact-metric">
+        <span class="metric-value" data-count="5000" data-compact="true">5K</span>
+        <div>
+          <div class="metric-label">Companies researched</div>
+          <p class="metric-note">Researched logistics markets in North America and Europe to support cross-border expansion.</p>
+        </div>
+      </article>
+      <article class="impact-metric">
+        <span class="metric-value" data-count="2">2</span>
+        <div>
+          <div class="metric-label">International partnerships</div>
+          <p class="metric-note">Helped secure international cooperation agreements through English-language technical presentations.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="impact-stories">
+      <article class="impact-story reveal">
+        <span class="story-index">01 / PRODUCT MANAGEMENT</span>
+        <h3>From user needs to product delivery</h3>
+        <p>Led user research, requirements definition, roadmap planning, alpha testing, and launch preparation. Coordinated eight AI infrastructure workstreams and translated technical constraints into practical product decisions.</p>
+        <div class="story-tags"><span class="story-tag">User Research</span><span class="story-tag">Roadmapping</span><span class="story-tag">Requirements</span><span class="story-tag">Delivery</span></div>
+      </article>
+      <article class="impact-story reveal">
+        <span class="story-index">02 / USER GROWTH</span>
+        <h3>Building demand before launch</h3>
+        <p>Established William AI's pre-launch community, converted user conversations into product feedback, and grew the waitlist to more than 2,000 signups. These insights informed product positioning and the post-launch growth roadmap.</p>
+        <div class="story-tags"><span class="story-tag">Community</span><span class="story-tag">Feedback Programs</span><span class="story-tag">Activation</span><span class="story-tag">Product-Led Growth</span></div>
+      </article>
+      <article class="impact-story reveal">
+        <span class="story-index">03 / GO-TO-MARKET AND PARTNERSHIPS</span>
+        <h3>Connecting products with new markets</h3>
+        <p>Developed a cross-border prospecting workflow covering 5,000 companies, identified relevant decision-makers, converted all three responses into discovery meetings, and qualified partnership opportunities.</p>
+        <div class="story-tags"><span class="story-tag">Market Research</span><span class="story-tag">Customer Discovery</span><span class="story-tag">Go-to-Market</span><span class="story-tag">Partnerships</span></div>
+      </article>
+    </div>
+  </section>
+
 
 
 
   <!-- EDUCATION -->
   <section class="education" id="education">
     <div class="section-header reveal">
-      <span class="section-num">03 — Education</span>
+      <span class="section-num">03 / Education</span>
       <h2 class="section-title">Education</h2>
     </div>
     <div class="edu-cards">
@@ -1730,7 +1981,7 @@
   <!-- EXPERIENCE -->
   <section class="experience" id="experience">
     <div class="section-header reveal">
-      <span class="section-num">04 — Experience</span>
+      <span class="section-num">04 / Experience</span>
       <h2 class="section-title">Work Experience</h2>
     </div>
     <div class="timeline">
@@ -1738,12 +1989,12 @@
      <div class="timeline-item reveal">
     <div class="timeline-dot"></div>
     <div class="timeline-date">Jul 2026 – Present</div>
-    <div class="timeline-role">Specialist of Region Expansion &amp; CDC (Intern)</div>
+    <div class="timeline-role">Regional Expansion and CDC Specialist (Intern)</div>
     <div class="timeline-company">UniUni · Remote</div>
     <ul class="timeline-bullets">
-      <li>Built a cross-border prospecting pipeline by screening approximately 5,000 logistics companies across North America and Europe and identifying decision-makers in operations, supply chain, and partnerships.</li>
-      <li>Executed approximately 3,500 targeted outreach attempts; converted all 3 responses into discovery meetings, achieving a 100% response-to-meeting conversion rate.</li>
-      <li>Qualified partnership interest and documented account intelligence to support regional expansion and last-mile logistics business development.</li>
+      <li>Built a cross-border prospecting pipeline by researching approximately 5,000 logistics companies in North America and Europe and identifying decision-makers in operations, supply chain, and partnerships.</li>
+      <li>Conducted approximately 3,500 targeted outreach attempts and converted all three responses into discovery meetings.</li>
+      <li>Qualified partnership opportunities and documented account intelligence to support regional expansion and last-mile delivery partnerships.</li>
     </ul>
   </div>
 
@@ -1753,9 +2004,9 @@
     <div class="timeline-role">Co-founder &amp; Product Lead</div>
     <div class="timeline-company">William AI · Los Angeles, CA / Remote</div>
     <ul class="timeline-bullets">
-      <li>Co-founded and led development of an AI-powered emotional wellness product combining guided AI support with community-based engagement.</li>
-      <li>Took the product from concept through Alpha testing; owned product requirements, software development, user feedback loops, and post-launch growth strategy.</li>
-      <li>Built the pre-launch community and acquired 2,000+ waitlist signups ahead of public release.</li>
+      <li>Co-founded and led the development of an AI-powered emotional wellness product that combines guided AI support with community engagement.</li>
+      <li>Advanced the product from concept through alpha testing and owned product requirements, software development, user feedback programs, and the post-launch growth strategy.</li>
+      <li>Built the pre-launch community and generated more than 2,000 waitlist signups before public release.</li>
     </ul>
   </div>
 
@@ -1765,9 +2016,9 @@
     <div class="timeline-role">Graduate Research Assistant</div>
     <div class="timeline-company">Spatial Sciences Institute, USC · Los Angeles, CA</div>
     <ul class="timeline-bullets">
-      <li>Developing interactive GIS Web Applications using React and Mapbox/ArcGIS API to visualize complex spatial datasets for urban research.</li>
-      <li>Architecting spatial data pipelines and optimizing PostGIS/PostgreSQL databases, improving query performance for large-scale geographic features.</li>
-      <li>Collaborating with faculty researchers to translate spatial analytical models into intuitive UI/UX components, supporting data-driven decision making.</li>
+      <li>Developing interactive web GIS applications with React and Mapbox/ArcGIS APIs to visualize complex spatial datasets for urban research.</li>
+      <li>Designing spatial data pipelines and optimizing PostGIS/PostgreSQL databases for large-scale geographic data.</li>
+      <li>Collaborating with faculty researchers to translate spatial models into intuitive user interfaces that support data-driven decisions.</li>
     </ul>
   </div>
 
@@ -1777,9 +2028,9 @@
     <div class="timeline-role">Product Manager (Full-time)</div>
     <div class="timeline-company">Huaxin Consulting Co., Ltd. · Hangzhou, China</div>
     <ul class="timeline-bullets">
-      <li>Led end to end lifecycle of 3 digital products; coordinated cross departmental alignment and achieved 100% on time delivery with 90% client satisfaction.</li>
-      <li>Seconded to China Telecom AI Co. as PM for the "Xirang" MaaS project; resolved 12+ critical cross system compatibility and permission issues, accelerating module integration by 3 days.</li>
-      <li>Represented the company in English technical pitches to government funds in Saudi Arabia and Brazil, securing 2 international cooperation agreements.</li>
+      <li>Led the end-to-end lifecycle of three digital products, aligned cross-functional teams, and achieved 100% on-time delivery with 90% client satisfaction.</li>
+      <li>Served as product manager for China Telecom AI's "Xirang" MaaS project, resolved more than 12 cross-system compatibility and access issues, and completed module integration three days ahead of schedule.</li>
+      <li>Delivered English-language technical presentations to government investment funds in Saudi Arabia and Brazil, contributing to two international cooperation agreements.</li>
     </ul>
   </div>
 
@@ -1789,8 +2040,8 @@
     <div class="timeline-role">Intelligent Solution Engineer (Intern)</div>
     <div class="timeline-company">Huaxin Consulting Co., Ltd. · Hangzhou, China</div>
     <ul class="timeline-bullets">
-      <li>Assisted in ToG government solution requirements; streamlined functional checklists for 2 major projects and supported initial proposal outputs.</li>
-      <li>Participated in grain and oil industry exhibitions, delivering presales product presentations and acquiring 3 groups of government client leads.</li>
+      <li>Supported requirements analysis for government solutions, prepared functional checklists for two major projects, and contributed to initial proposals.</li>
+      <li>Presented products at grain and oil industry exhibitions and generated three qualified government client leads.</li>
     </ul>
   </div>
 
@@ -1800,9 +2051,9 @@
     <div class="timeline-role">AI Development Engineer (Intern)</div>
     <div class="timeline-company">Huaxin Consulting Co., Ltd. · Hangzhou, China</div>
     <ul class="timeline-bullets">
-      <li>Designed unstructured text tokenization rules on 2,000,000+ records for a Gov GenAI model; improved Precision & Recall by 12%.</li>
-      <li>Developed a distributed Java crawler for 31 bidding platforms, successfully bypassing complex antiscraping mechanisms.</li>
-      <li>Built Python validation scripts achieving &lt;1% amount error and 90% clause coverage for bidding monitoring.</li>
+      <li>Designed tokenization rules for more than 2 million unstructured text records used in a government generative AI model, improving precision and recall by 12%.</li>
+      <li>Developed a distributed Java crawler covering 31 procurement platforms and handled complex anti-scraping controls.</li>
+      <li>Built Python validation tools that reduced monetary errors below 1% and achieved 90% clause coverage in tender monitoring.</li>
     </ul>
   </div>
 
@@ -1812,8 +2063,8 @@
     <div class="timeline-role">Spatial Data Analyst (Intern)</div>
     <div class="timeline-company">Ouhai Surveying and Mapping Institute · Wenzhou, China</div>
     <ul class="timeline-bullets">
-      <li>Processed 100GB+ multi source satellite remote sensing data using Python; produced 20+ visualization dashboards.</li>
-      <li>Developed spatial models based on ArcGIS, increasing land area calculation efficiency by 30% to support government planning decisions.</li>
+      <li>Processed more than 100 GB of multisource satellite imagery with Python and produced more than 20 visualization dashboards.</li>
+      <li>Developed ArcGIS-based spatial models that improved land-area calculation efficiency by 30% for government planning.</li>
     </ul>
   </div>
 </div>
@@ -1823,16 +2074,16 @@
 <!-- PROJECTS -->
   <section class="projects" id="projects">
     <div class="section-header reveal">
-      <span class="section-num">02 — Selected Work</span>
+      <span class="section-num">02 / Selected Work</span>
       <h2 class="section-title">Selected Work</h2>
     </div>
     
     <!-- Project -->
     <div class="work-track-heading reveal">
-      <span class="work-track-index">TRACK 02</span>
+      <span class="work-track-index">FOCUS 02</span>
       <div>
-        <h3>Project</h3>
-        <p>Project execution, stakeholder alignment, and cross-team delivery.</p>
+        <h3>Program Delivery</h3>
+        <p>Program execution, stakeholder alignment, and cross-functional delivery.</p>
       </div>
     </div>
     <div class="projects-grid project-only-grid">
@@ -1857,7 +2108,7 @@
   </div>
 
   <div class="project-description">
-    Co-led end-to-end project delivery between the MaaS layer and AI infrastructure; coordinated development sprints across 8 workstreams and delivered key modules 3 days ahead of schedule.
+    Co-led end-to-end delivery across the MaaS platform and AI infrastructure, managed development sprints across eight workstreams, and completed key module integration three days ahead of schedule.
   </div>
   
   <div class="tags">
@@ -1870,10 +2121,10 @@
     </div>
 
     <div class="work-track-heading reveal product-heading">
-      <span class="work-track-index">TRACK 01</span>
+      <span class="work-track-index">FOCUS 01</span>
       <div>
-        <h3>Product</h3>
-        <p>Software products, intelligent systems, and spatial data solutions.</p>
+        <h3>Product Management</h3>
+        <p>AI products, intelligent systems, and spatial data solutions.</p>
       </div>
     </div>
     <div class="projects-grid product-grid">
@@ -1881,7 +2132,7 @@
 <!-- William AI Emotional Wellness Platform -->
 <div class="project-card reveal">
   <div class="project-cat">AI Wellness · Startup</div>
-  <div class="project-title">William — AI Emotional Wellness Platform</div>
+  <div class="project-title">William AI | Emotional Wellness Platform</div>
 
   <div class="project-meta-clean">
     <div class="p-role">Co-founder / Product Lead</div>
@@ -1905,7 +2156,7 @@
   </div>
 
   <div class="project-description">
-    Co-founded and led the product from concept to a completed Alpha release. Own software development, user-needs discovery, community operations, and the post-launch product-led growth roadmap.
+    Co-founded William AI and led the product from initial concept through completion of the alpha release. Responsibilities include product discovery, software development, community operations, and planning the post-launch product-led growth strategy.
   </div>
 
   <div class="tags">
@@ -1916,10 +2167,10 @@
   </div>
 </div>
 
-<!-- GovTech AI Suite — Smart Evaluation & Fire Safety Cloud -->
+<!-- GovTech AI Suite: Smart Evaluation & Fire Safety Cloud -->
      <div class="project-card reveal">
   <div class="project-cat">GovTech</div>
-  <div class="project-title">GovTech AI Suite — Smart Evaluation & Fire Safety Cloud</div>
+  <div class="project-title">Government AI Suite | Smart Assessment and Fire Safety Cloud</div>
   
   <div class="project-meta-clean">
     <div class="p-role">Product Manager</div>
@@ -1932,7 +2183,7 @@
        </div>
 
   <div class="project-description">
-    Developed AI driven fire safety assessment modules and cloud infrastructure for government applications.
+    Led the development of AI-enabled fire safety assessment modules and supporting cloud infrastructure for government use cases.
   </div>
 
   <div class="tags">
@@ -1959,7 +2210,7 @@
     </div>
 
   <div class="project-description">
-    Air ground integrated inspection and dispatch command center featuring multi robot coordination, real time sensor monitoring, and AI driven anomaly detection across industrial facilities.
+    Designed an integrated air-ground inspection and dispatch system supporting multi-robot coordination, real-time sensor monitoring, and AI-assisted anomaly detection across industrial sites.
   </div>
 
   <div class="tags">
@@ -1972,7 +2223,7 @@
 
 <div class="project-card reveal">
   <div class="project-cat">AI Enterprise Solutions</div>
-  <div class="project-title">Intelligent Tender Management & Evaluation System</div>
+  <div class="project-title">Intelligent Tender Management and Evaluation System</div>
   
   <div class="project-meta-clean">
     <div class="p-role">Product Manager</div>
@@ -1984,7 +2235,7 @@
   </div>
 
   <div class="project-description">
-    Designed an AI powered tender management platform for enterprise and government clients. Key features include automated generation of tailored bidding documents, AI driven parsing and automated scoring of vendor submissions, original document cross referencing, intelligent plagiarism detection, and real time vendor ranking.
+    Designed an AI-enabled tender management platform for enterprise and government clients. Core capabilities include automated document generation, AI-assisted parsing and scoring, source-document verification, similarity detection, and real-time vendor ranking.
   </div>
 
   <div class="tags">
@@ -2011,11 +2262,11 @@
   </div>
 
   <div class="project-award-box">
-    <span class="project-award">🏆 National Grand Prize · 19th Challenge Cup (Top 1% of 7,000+ Teams) </span>
+    <span class="project-award">🏆 National Grand Prize · 19th Challenge Cup | Top 1% of 7,000+ teams</span>
   </div>
 
   <div class="project-description">
-    Optimized LSTM predictive models (+10% forecasting accuracy); processed 100GB+ spatial datasets. Coordinated cross functional delivery of all system modules.
+    Improved LSTM forecasting accuracy by 10%, processed more than 100 GB of spatial data, and coordinated cross-functional delivery across all system modules.
   </div>
 
   <div class="tags">
@@ -2040,11 +2291,11 @@
   </div>
 
   <div class="project-award-box">
-    <span class="project-award">🏆 National Third Prize · 2024 (Top 3% of 8,801 Teams)</span>
+    <span class="project-award">🏆 National Third Prize · 2024 | Top 3% of 8,801 teams</span>
   </div>
 
   <div class="project-description">
-    Led market research and system architecture design for large scale drone fleet management. Implemented collaborative mission planning algorithms and real time command protocols for cross regional UAV operations.
+    Led market research and system architecture design for large-scale drone fleet management. Implemented collaborative mission-planning algorithms and real-time command protocols for cross-regional UAV operations.
   </div>
 
   <div class="tags">
@@ -2060,8 +2311,8 @@
 <!-- HONORS -->
  <section class="honors-awards" id="honors-awards" style="opacity: 1 !important; visibility: visible !important; margin-bottom: 50px;">
   <div class="section-header" style="opacity: 1 !important;">
-    <span class="section-num" style="color: #666 !important;">05 — Honors</span>
-    <h2 class="section-title" style="color: #1a1a1a !important;">Awards &<br>Recognition</h2>
+    <span class="section-num" style="color: #666 !important;">05 / Honors</span>
+    <h2 class="section-title" style="color: #1a1a1a !important;">Awards and Recognition</h2>
   </div>
   
   <div class="awards-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
@@ -2069,9 +2320,9 @@
     <div class="award-card" style="opacity: 1 !important; visibility: visible !important; border: 1px solid #eee; padding: 25px; background: #fff; display: flex; flex-direction: column;">
       <div class="award-icon award-icon-gold" aria-label="Gold trophy"><i class="fa-solid fa-trophy" aria-hidden="true"></i></div>
       <div class="award-year-tag" style="color: #4A7862; font-weight: bold;">2024</div>
-      <div class="award-name" style="color: #1a1a1a !important; font-weight: bold; font-size: 1.1rem; margin: 10px 0;">China National Grand Prize (1st Place)</div>
+      <div class="award-name" style="color: #1a1a1a !important; font-weight: bold; font-size: 1.1rem; margin: 10px 0;">National Grand Prize, China</div>
       <div class="award-org" style="color: #555 !important; font-size: 0.9rem; flex-grow: 1;">
-        19th "Challenge Cup" Special Competition · Ranked 1% among 7,000+ national teams.
+        19th "Challenge Cup" Special Competition · Ranked in the top 1% among more than 7,000 teams nationwide.
       </div>
       <div class="award-role" style="color: #4A7862 !important; font-size: 0.85rem; margin-top: 15px; font-weight: bold !important;">CORE MEMBER</div>
     </div>
@@ -2079,9 +2330,9 @@
     <div class="award-card" style="opacity: 1 !important; visibility: visible !important; border: 1px solid #eee; padding: 25px; background: #fff; display: flex; flex-direction: column;">
       <div class="award-icon award-icon-bronze" aria-label="Bronze medal"><i class="fa-solid fa-medal" aria-hidden="true"></i></div>
       <div class="award-year-tag" style="color: #4A7862; font-weight: bold;">2024</div>
-      <div class="award-name" style="color: #1a1a1a !important; font-weight: bold; font-size: 1.1rem; margin: 10px 0;">China National (3rd Prize)</div>
+      <div class="award-name" style="color: #1a1a1a !important; font-weight: bold; font-size: 1.1rem; margin: 10px 0;">National Third Prize, China</div>
       <div class="award-org" style="color: #555 !important; font-size: 0.9rem; flex-grow: 1;">
-        China University Service Outsourcing Innovation & Entrepreneurship Competition · Ranked 3% among 8,801 national teams.
+        China University Service Outsourcing Innovation and Entrepreneurship Competition · Ranked in the top 3% among 8,801 teams nationwide.
       </div>
       <div class="award-role" style="color: #4A7862 !important; font-size: 0.85rem; margin-top: 15px; font-weight: bold !important;">TEAM LEADER</div>
     </div>
@@ -2089,9 +2340,9 @@
     <div class="award-card" style="opacity: 1 !important; visibility: visible !important; border: 1px solid #eee; padding: 25px; background: #fff; display: flex; flex-direction: column;">
       <div class="award-icon award-icon-silver" aria-label="Silver medal"><i class="fa-solid fa-medal" aria-hidden="true"></i></div>
       <div class="award-year-tag" style="color: #4A7862; font-weight: bold;">2024</div>
-      <div class="award-name" style="color: #1a1a1a !important; font-weight: bold; font-size: 1.1rem; margin: 10px 0;">Zhejiang Provincial 2nd Prize</div>
+      <div class="award-name" style="color: #1a1a1a !important; font-weight: bold; font-size: 1.1rem; margin: 10px 0;">Second Prize, Zhejiang Province</div>
       <div class="award-org" style="color: #555 !important; font-size: 0.9rem; flex-grow: 1;">
-        14th National University E-commerce "Innovation, Creativity & Entrepreneurship" (Sanchuang) Challenge.
+        14th National University E-commerce Innovation, Creativity and Entrepreneurship Challenge.
       </div>
       <div class="award-role" style="color: #4A7862 !important; font-size: 0.85rem; margin-top: 15px; font-weight: bold !important;">TEAM LEADER</div>
     </div>
@@ -2103,8 +2354,8 @@
 <!-- publication-->
 <section class="publications" id="publications" style="opacity: 1 !important; visibility: visible !important; margin-bottom: 50px;">
   <div class="section-header" style="opacity: 1 !important; visibility: visible !important;">
-    <span class="section-num" style="color: #666 !important;">07 — Research & Publications</span>
-    <h2 class="section-title" style="color: #1a1a1a !important; opacity: 1 !important;">Journal Publications &<br>Software Copyrights</h2>
+    <span class="section-num" style="color: #666 !important;">07 / Research and Publications</span>
+    <h2 class="section-title" style="color: #1a1a1a !important; opacity: 1 !important;">Research Publications and Software Copyrights</h2>
   </div>
 
   <h3 style="color: #1a1a1a !important; font-size: 1.2rem; margin: 30px 0 15px 0; font-family: serif;">Journal Publications</h3>
@@ -2117,7 +2368,7 @@
     </div>
 
     <div class="pub-card" style="flex: 1; min-width: 300px; border-left: 4px solid #4A7862; padding: 15px 20px; background: #f9f9f9; opacity: 1 !important;">
-      <div style="color: #1a1a1a !important; font-weight: bold; margin-bottom: 5px;">"multi source Remote Sensing Monitoring Methods for Water Quality in Wetland Lake Chains..."</div>
+      <div style="color: #1a1a1a !important; font-weight: bold; margin-bottom: 5px;">"Multisource Remote Sensing Monitoring Methods for Water Quality in Wetland Lake Chains..."</div>
       <div style="color: #666 !important; font-size: 0.9rem;">Journal of Hangzhou Normal University, 2024</div>
       <div style="color: #4A7862 !important; font-size: 0.85rem; margin-top: 5px; font-weight: bold !important;">CO-AUTHOR</div>
     </div>
@@ -2135,7 +2386,7 @@
         </div>
         <div>
           <div style="font-weight: bold; color: #1a1a1a; font-size: 0.95rem; line-height: 1.2;">Algae Bloom Inversion Software for Sentinel-2 (6S Model) V1.0</div>
-          <div style="color: #888; font-size: 0.8rem; margin-top: 2px;">Reg. No: 2024SR0929419 · July 2024</div>
+          <div style="color: #888; font-size: 0.8rem; margin-top: 2px;">Registration No. 2024SR0929419 · July 2024</div>
         </div>
       </div>
       <div style="color: #4A7862; font-weight: bold !important; white-space: nowrap; margin-left: 20px; font-size: 0.8rem;">LEAD AUTHOR</div>
@@ -2151,8 +2402,8 @@
           </svg>
         </div>
         <div>
-          <div style="font-weight: bold; color: #1a1a1a; font-size: 0.95rem; line-height: 1.2;">Water Color Index Extraction System (multi source Imagery) V2.0</div>
-          <div style="color: #888; font-size: 0.8rem; margin-top: 2px;">Reg. No: 2023SR1728027 · Dec 2023</div>
+          <div style="font-weight: bold; color: #1a1a1a; font-size: 0.95rem; line-height: 1.2;">Water Color Index Extraction System (Multisource Imagery) V2.0</div>
+          <div style="color: #888; font-size: 0.8rem; margin-top: 2px;">Registration No. 2023SR1728027 · December 2023</div>
         </div>
       </div>
       <div style="color: #4A7862; font-weight: bold !important; white-space: nowrap; margin-left: 20px; font-size: 0.8rem;">LEAD AUTHOR</div>
@@ -2168,7 +2419,7 @@
         </div>
         <div>
           <div style="font-weight: bold; color: #1a1a1a; font-size: 0.95rem; line-height: 1.2;">Aerosol Optical Depth (AOD) Inversion Software V1.0</div>
-          <div style="color: #888; font-size: 0.8rem; margin-top: 2px;">Reg. No: 2023SR1785807 · Dec 2023</div>
+          <div style="color: #888; font-size: 0.8rem; margin-top: 2px;">Registration No. 2023SR1785807 · December 2023</div>
         </div>
       </div>
       <div style="color: #4A7862; font-weight: bold !important; white-space: nowrap; margin-left: 20px; font-size: 0.8rem;">LEAD AUTHOR</div>
@@ -2179,7 +2430,7 @@
 <!-- Ceritification-->
 <section class="certifications" id="certifications" style="opacity: 1 !important; visibility: visible !important; margin-bottom: 60px;">
   <div class="section-header">
-    <span class="section-num" style="color: #666 !important;">06 — Certifications</span>
+    <span class="section-num" style="color: #666 !important;">06 / Certifications</span>
     <h2 class="section-title" style="color: #1a1a1a !important;">Certifications</h2>
   </div>
   
@@ -2202,7 +2453,7 @@
           VALID
         </span>
       </div>
-      <div style="color: #888; font-size: 0.85rem; margin-top: 8px;">ETS Certified · Score Report Available</div>
+      <div style="color: #888; font-size: 0.85rem; margin-top: 8px;">Official ETS score report available</div>
     </div>
 
     <div class="cert-card" style="flex: 1; min-width: 300px; border: 1px solid #eee; padding: 30px; background: #fff; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.02); transition: transform 0.3s ease;">
@@ -2212,10 +2463,10 @@
         </svg>
       </div>
       <div style="color: #999; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 8px;">Emerging Technology</div>
-      <div style="color: #1a1a1a; font-weight: bold; font-size: 1.25rem; margin-bottom: 12px;">Generative AI Leader</div>
+      <div style="color: #1a1a1a; font-weight: bold; font-size: 1.25rem; margin-bottom: 12px;">Generative AI Leadership Program</div>
       <div style="color: #666; font-size: 0.9rem; margin-bottom: 12px;">Google Launchpad for Women [APAC]</div>
       <div style="display: inline-block; padding: 2px 10px; background: #f4f7f5; color: #4A7862; font-size: 0.7rem; font-weight: bold; border-radius: 20px; border: 1px solid #e0e8e3;">
-        EXPECTED MARCH 2026
+        MARCH 2026
       </div>
     </div>
 
@@ -2226,8 +2477,8 @@
  <!-- Activity -->
   <section class="activities" id="activities" style="opacity: 1 !important; visibility: visible !important; margin-bottom: 50px;">
   <div class="section-header" style="opacity: 1 !important;">
-    <span class="section-num" style="color: #666 !important;">08 — Activities</span>
-   <h2 class="section-title" style="color: #1a1a1a !important;">Public Engagement &<br>Leadership</h2>
+    <span class="section-num" style="color: #666 !important;">08 / Activities</span>
+   <h2 class="section-title" style="color: #1a1a1a !important;">Public Engagement and Leadership</h2>
   </div>
 
   <div class="activity-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
@@ -2237,9 +2488,9 @@
         <span style="font-size: 1.5rem;">🎭</span>
         <span style="color: #4A7862; font-weight: bold; font-size: 0.9rem;">OCT 2022</span>
       </div>
-      <div style="font-weight: bold; color: #1a1a1a; font-size: 1.1rem; margin-bottom: 8px;">19th Asian Games Theme Song MV</div>
+      <div style="font-weight: bold; color: #1a1a1a; font-size: 1.1rem; margin-bottom: 8px;">19th Asian Games Theme Song Music Video</div>
       <div style="color: #555; font-size: 0.9rem; line-height: 1.6;">
-        Selected as a <span style="font-weight: bold !important;">Performance Participant</span> for the official theme song music video and torch relay promotional filming. Recognized for outstanding performance by the Organizing Committee.
+        Selected to perform in the official theme song music video and torch relay promotional film. Received recognition from the Organizing Committee for outstanding performance.
       </div>
       <div style="margin-top: 15px; color: #666; font-size: 0.8rem; font-style: italic;">
         Organizer: HAGOC (Hangzhou Asian Games Organizing Committee)
@@ -2254,7 +2505,7 @@
   <div class="contact-inner" style="max-width: 800px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center;">
     
     <div class="section-header" style="margin-bottom: 20px;">
-      <span class="section-num" style="color: #666; letter-spacing: 2px; font-size: 0.8rem;">08 — CONTACT</span>
+      <span class="section-num" style="color: #666; letter-spacing: 2px; font-size: 0.8rem;">09 / Contact</span>
     </div>
 
     <h2 class="contact-heading" style="font-size: 3.5rem; color: #1a1a1a; margin-bottom: 25px; font-family: serif; line-height: 1.1;">
@@ -2262,8 +2513,7 @@
     </h2>
 
     <p class="contact-sub" style="color: #666; line-height: 1.6; margin-bottom: 40px; font-size: 1.05rem;">
-      Open to research collaborations, internships, and conversations<br>
-      about geospatial AI, product strategy, and anything in between.
+      Open to product management and growth opportunities, as well as conversations about AI products, user research, and go-to-market strategy.
     </p>
 
     <a href="mailto:jinyubing615@gmail.com"
@@ -2303,7 +2553,7 @@
 
   <footer>
     <span>© 2026 Regina Jin</span>
-    <span>Spatial intelligence · product systems</span>
+    <span>Product management · user growth · AI systems</span>
   </footer>
   <script>
     const translations = {
@@ -2314,7 +2564,50 @@
       "Certs": "证书",
       "Publications": "研究成果",
       "Contact": "联系我",
+      "Impact": "成果",
       "RESUME": "简历",
+      "Product Management · User Growth · AI & Data": "产品管理 · 用户增长 · AI 与数据",
+      "Product Manager & Builder": "产品经理与产品构建者",
+      "Community-led Growth": "社群驱动增长",
+      "Product Manager & Builder | Community-led Growth": "产品经理与产品构建者 | 社群驱动增长",
+      "Technical Delivery": "技术交付",
+      "Market Expansion": "市场拓展",
+      "Technical Delivery | Market Expansion": "技术交付 | 市场拓展",
+      "I turn ambiguous user problems into shipped products and measurable momentum, from taking William AI from concept to Alpha and 2,000+ waitlist signups to leading digital products, technical delivery, and cross-border growth.": "我把模糊的用户问题转化为真正落地的产品与可衡量的增长：从推动 William AI 由概念走向 Alpha 并获得 2,000+ 候补用户，到主导数字产品、技术交付与跨境增长。",
+      "Products Led": "主导产品",
+      "Waitlist Users": "候补用户",
+      "On-time Delivery": "按时交付",
+      "01 / Product + Growth": "01 / 产品与增长",
+      "I build the product,": "我打造产品，",
+      "then build the momentum.": "也让它获得增长势能。",
+      "My work sits where product judgment meets execution: understanding users, defining what to build, shipping with technical teams, and creating the community and go-to-market motion that brings products into the real world.": "我的工作连接产品判断与执行：理解用户、定义产品、与技术团队完成交付，并通过社群和市场进入策略，让产品走进真实世界。",
+      "Digital products led": "主导数字产品",
+      "End-to-end ownership with 100% on-time delivery and 90% client satisfaction.": "端到端负责产品全生命周期，实现 100% 按时交付与 90% 客户满意度。",
+      "Pre-launch waitlist": "上线前候补用户",
+      "Built William AI's early community and user feedback loop before public release.": "在公开发布前建立 William AI 早期社群与用户反馈闭环。",
+      "Accounts researched": "调研企业账户",
+      "Mapped North American and European logistics markets for cross-border expansion.": "为跨境业务拓展梳理北美与欧洲物流市场。",
+      "Global partnerships": "国际合作",
+      "Supported international cooperation through English technical product pitches.": "通过英文技术产品提案推动国际合作。",
+      "01 / PRODUCT MANAGEMENT": "01 / 产品管理",
+      "From ambiguity to shipped product": "从模糊问题到产品落地",
+      "Owned discovery, requirements, roadmap decisions, Alpha testing, and delivery. Coordinated 8 AI-infrastructure workstreams and translated technical constraints into clear product tradeoffs.": "负责用户发现、需求定义、路线图决策、Alpha 测试与交付；协调 8 条 AI 基础设施工作流，并将技术约束转化为清晰的产品取舍。",
+      "Discovery": "用户发现",
+      "Roadmap": "产品路线图",
+      "PRD": "产品需求文档",
+      "Delivery": "产品交付",
+      "02 / USER GROWTH": "02 / 用户增长",
+      "Built demand before launch": "在上线前建立真实需求",
+      "Created William AI's pre-launch community, turned conversations into product feedback, and grew the waitlist to 2,000+ signups while shaping the product-led growth roadmap.": "搭建 William AI 上线前社群，将用户对话转化为产品反馈，并在制定产品驱动增长路线的同时，把候补名单增长至 2,000+ 人。",
+      "Feedback loops": "反馈闭环",
+      "Activation": "用户激活",
+      "PLG": "产品驱动增长",
+      "Connected products to markets": "让产品连接真实市场",
+      "Built a cross-border prospecting system across 5,000 companies, identified operational decision-makers, converted every response into a discovery meeting, and qualified partnership opportunities.": "搭建覆盖 5,000 家企业的跨境潜客系统，定位运营决策人，将每一个有效回复转化为需求探索会议，并筛选合作机会。",
+      "Market mapping": "市场地图",
+      "Customer discovery": "客户发现",
+      "GTM": "市场进入",
+      "Partnerships": "合作拓展",
       "Spatial Data Science · AI Product · GeoTech": "空间数据科学 · AI 产品 · 地理科技",
       "Spatial Data Science": "空间数据科学",
       "GeoTech": "地理科技",
@@ -2328,7 +2621,7 @@
       "Years Exp.": "年经验",
       "SCI Papers": "SCI 论文",
       "Natl. Prize": "国家级奖项",
-      "03 — Education": "03 — 教育经历",
+      "03 / Education": "03 / 教育经历",
       "Master of Science in Spatial Data Science": "空间数据科学理学硕士",
       "University of Southern California (USC)": "南加州大学（USC）",
       "Los Angeles, CA · Jan 2026 – Present": "美国洛杉矶 · 2026年1月至今",
@@ -2341,7 +2634,7 @@
       "Data Engineering": "数据工程",
       "Cartography": "地图学",
       "Spatial Statistics": "空间统计",
-      "04 — Experience": "04 — 工作经历",
+      "04 / Experience": "04 / 工作经历",
       "Work Experience": "工作经历",
       "Jul 2026 – Present": "2026年7月至今",
       "Specialist of Region Expansion & CDC (Intern)": "区域拓展与 CDC 专员（实习）",
@@ -2381,8 +2674,8 @@
       "Ouhai Surveying and Mapping Institute · Wenzhou, China": "瓯海测绘与地理信息院 · 中国温州",
       "Processed 100GB+ multi source satellite remote sensing data using Python; produced 20+ visualization dashboards.": "使用 Python 处理 100GB+ 多源卫星遥感数据，并制作 20+ 个可视化看板。",
       "Developed spatial models based on ArcGIS, increasing land area calculation efficiency by 30% to support government planning decisions.": "基于 ArcGIS 开发空间模型，将土地面积计算效率提升 30%，支持政府规划决策。",
-      "02 — Selected Work": "02 — 精选项目",
-      "Selected Work": "精选项目",
+      "02 / Selected Work": "02 / 精选项目",
+      "Selected Work": "代表项目",
       "TRACK 02": "方向 02",
       "Project": "项目管理",
       "Project execution, stakeholder alignment, and cross-team delivery.": "项目执行、利益相关方协同与跨团队交付。",
@@ -2399,21 +2692,21 @@
       "TRACK 01": "方向 01",
       "Product": "产品",
       "Software products, intelligent systems, and spatial data solutions.": "软件产品、智能系统与空间数据解决方案。",
-      "AI Wellness · Startup": "AI 疗愈 · 创业项目",
-      "William — AI Emotional Wellness Platform": "William — AI 情绪疗愈平台",
+      "AI Wellness · Startup": "AI 情绪健康 · 创业项目",
+      "William | AI Emotional Wellness Platform": "William | AI 情绪疗愈平台",
       "Co-founder / Product Lead": "联合创始人 / 产品负责人",
       "William · Private Alpha Complete": "William · 已完成内部 Alpha 测试",
-      "A thoughtful AI companion for emotional wellness": "有温度的 AI 情绪疗愈伙伴",
+      "A thoughtful AI companion for emotional wellness": "专注情绪健康的 AI 伙伴",
       "AI Support · Community · Personal Growth": "AI 支持 · 社群 · 个人成长",
       "Visit website ↗": "访问网站 ↗",
       "2,000+ waitlist signups · Alpha testing completed": "2,000+ 候补用户 · 已完成 Alpha 测试",
       "Co-founded and led the product from concept to a completed Alpha release. Own software development, user-needs discovery, community operations, and the post-launch product-led growth roadmap.": "联合创立并推动产品从概念走向 Alpha 版本，负责软件开发、用户需求洞察、社群运营以及上线后的产品增长路线。",
-      "AI Wellness": "AI 疗愈",
-      "Product Development": "产品开发",
-      "Community": "社群运营",
+      "AI Wellness": "AI 情绪健康",
+      "Product Development": "产品研发",
+      "Community": "社群建设",
       "Growth": "用户增长",
       "GovTech": "政务科技",
-      "GovTech AI Suite — Smart Evaluation & Fire Safety Cloud": "政务 AI 套件 — 智能评审与消防安全云",
+      "GovTech AI Suite | Smart Evaluation & Fire Safety Cloud": "政务 AI 套件 | 智能评审与消防安全云",
       "Jul 2025 – Dec 2025": "2025年7月–2025年12月",
       "Developed AI driven fire safety assessment modules and cloud infrastructure for government applications.": "面向政务应用开发 AI 驱动的消防安全评估模块与云端基础设施。",
       "Cloud AI": "云端 AI",
@@ -2440,7 +2733,7 @@
       "Led market research and system architecture design for large scale drone fleet management. Implemented collaborative mission planning algorithms and real time command protocols for cross regional UAV operations.": "负责大型无人机集群管理的市场调研与系统架构设计，实现协同任务规划算法及跨区域无人机实时指挥协议。",
       "Fleet Coordination": "集群协同",
       "System Design": "系统设计",
-      "05 — Honors": "05 — 荣誉奖项",
+      "05 / Honors": "05 / 荣誉奖项",
       "Awards & Recognition": "荣誉与奖项",
       "China National Grand Prize (1st Place)": "中国国家级特等奖（第一名）",
       "19th \"Challenge Cup\" Special Competition · Ranked 1% among 7,000+ national teams.": "第十九届“挑战杯”专项赛 · 全国 7,000+ 支队伍前 1%。",
@@ -2450,13 +2743,13 @@
       "TEAM LEADER": "团队负责人",
       "Zhejiang Provincial 2nd Prize": "浙江省二等奖",
       "14th National University E-commerce \"Innovation, Creativity & Entrepreneurship\" (Sanchuang) Challenge.": "第十四届全国大学生电子商务“创新、创意及创业”挑战赛。",
-      "07 — Research & Publications": "07 — 研究与出版",
+      "07 / Research & Publications": "07 / 研究与出版",
       "Journal Publications & Software Copyrights": "学术论文与软件著作权",
       "Journal Publications": "学术论文",
       "CO-AUTHOR": "共同作者",
       "Software Copyrights": "软件著作权",
       "LEAD AUTHOR": "第一作者",
-      "06 — Certifications": "06 — 证书",
+      "06 / Certifications": "06 / 证书",
       "Certifications": "证书",
       "Graduate Admissions": "研究生入学考试",
       "GRE General Test": "GRE 通用考试",
@@ -2466,16 +2759,126 @@
       "Emerging Technology": "新兴技术",
       "Generative AI Leader": "生成式 AI 领导力项目",
       "EXPECTED MARCH 2026": "预计 2026 年 3 月完成",
-      "08 — Activities": "08 — 社会活动",
+      "08 / Activities": "08 / 社会活动",
       "Public Engagement & Leadership": "公众参与与领导力",
-      "19th Asian Games Theme Song MV": "第十九届亚运会主题曲 MV",
       "Selected as a Performance Participant for the official theme song music video and torch relay promotional filming. Recognized for outstanding performance by the Organizing Committee.": "入选官方主题曲 MV 及火炬传递宣传片表演人员，并因突出表现获得组委会认可。",
       "Organizer: HAGOC (Hangzhou Asian Games Organizing Committee)": "主办方：杭州亚运会组委会（HAGOC）",
-      "08 — CONTACT": "08 — 联系我",
+      "08 / CONTACT": "08 / 联系我",
       "Let's": "期待",
-      "Connect": "与你连接",
+      "Connect": "与你交流",
       "Open to research collaborations, internships, and conversations about geospatial AI, product strategy, and anything in between.": "期待科研合作、实习机会，以及关于地理空间 AI、产品战略与更多领域的交流。",
-      "Spatial intelligence · product systems": "空间智能 · 产品系统"
+      "Spatial intelligence · product systems": "空间智能 · 产品系统",
+      "Product Manager | User Growth": "产品经理 | 用户增长",
+      "AI Products | Community Building | Market Expansion": "AI 产品 | 社群建设 | 市场拓展",
+      "I translate complex user needs into products that ship and strategies that grow. My experience includes taking William AI from concept to Alpha with more than 2,000 waitlist signups, leading end-to-end digital product delivery, and supporting international market expansion.": "我将复杂的用户需求转化为可落地的产品与可持续的增长策略。我的经验包括推动 William AI 从概念阶段进入 Alpha 测试并获得 2,000 余名候补用户，主导数字产品的端到端交付，以及支持国际市场拓展。",
+      "Waitlist Signups": "候补用户",
+      "On-Time Delivery": "按时交付率",
+      "01 / Product and Growth": "01 / 产品与增长",
+      "Turning product insight": "将产品洞察",
+      "into measurable growth.": "转化为可衡量的增长",
+      "I work across the full product lifecycle, from user research and product definition to cross-functional delivery and go-to-market execution. This experience helps me connect customer needs, technical constraints, and business outcomes.": "我的工作覆盖产品全生命周期，包括用户研究、产品定义、跨职能交付与市场进入。这些经历使我能够在客户需求、技术约束与业务结果之间建立有效连接。",
+      "Managed the end-to-end lifecycle of three digital products, achieving 100% on-time delivery and 90% client satisfaction.": "负责三款数字产品的端到端生命周期，实现 100% 按时交付和 90% 客户满意度。",
+      "Waitlist signups": "候补用户",
+      "Built William AI's early user community and feedback program before public launch.": "在公开发布前建立 William AI 的早期用户社群和反馈机制。",
+      "Companies researched": "调研企业",
+      "Researched logistics markets in North America and Europe to support cross-border expansion.": "调研北美与欧洲物流市场，为跨境业务拓展提供支持。",
+      "International partnerships": "国际合作项目",
+      "Helped secure international cooperation agreements through English-language technical presentations.": "通过英文技术方案汇报，协助促成国际合作协议。",
+      "From user needs to product delivery": "从用户需求到产品交付",
+      "Led user research, requirements definition, roadmap planning, Alpha testing, and launch preparation. Coordinated eight AI infrastructure workstreams and translated technical constraints into practical product decisions.": "负责用户研究、需求定义、路线图规划、Alpha 测试与上线准备；协调八条 AI 基础设施工作流，并将技术约束转化为可执行的产品决策。",
+      "User Research": "用户研究",
+      "Roadmapping": "路线图规划",
+      "Requirements": "需求管理",
+      "Building demand before launch": "在上线前验证并积累需求",
+      "Established William AI's pre-launch community, converted user conversations into product feedback, and grew the waitlist to more than 2,000 signups. These insights informed product positioning and the post-launch growth roadmap.": "搭建 William AI 上线前社群，将用户交流沉淀为产品反馈，并积累 2,000 余名候补用户。这些洞察进一步支持了产品定位和上线后的增长规划。",
+      "Feedback Programs": "用户反馈",
+      "Product-Led Growth": "产品驱动增长",
+      "Connecting products with new markets": "推动产品进入新市场",
+      "Developed a cross-border prospecting workflow covering 5,000 companies, identified relevant decision-makers, converted all three responses into discovery meetings, and qualified partnership opportunities.": "搭建覆盖 5,000 家企业的跨境潜客开发流程，识别相关决策人，将收到的三个回复全部转化为需求沟通会议，并评估潜在合作机会。",
+      "Market Research": "市场调研",
+      "Customer Discovery": "客户洞察",
+      "Go-to-Market": "市场进入策略",
+      "Credentials": "证书",
+      "03 / GO-TO-MARKET AND PARTNERSHIPS": "03 / 市场进入与合作拓展",
+      "03 / Education": "03 / 教育经历",
+      "04 / Experience": "04 / 工作经历",
+      "Regional Expansion and CDC Specialist (Intern)": "区域拓展与 CDC 专员（实习）",
+      "Built a cross-border prospecting pipeline by researching approximately 5,000 logistics companies in North America and Europe and identifying decision-makers in operations, supply chain, and partnerships.": "通过调研北美和欧洲约 5,000 家物流企业搭建跨境潜客开发流程，并识别运营、供应链与合作业务相关决策人。",
+      "Conducted approximately 3,500 targeted outreach attempts and converted all three responses into discovery meetings.": "开展约 3,500 次定向触达，并将收到的三个回复全部转化为需求沟通会议。",
+      "Qualified partnership opportunities and documented account intelligence to support regional expansion and last-mile delivery partnerships.": "评估合作机会并沉淀客户信息，为区域拓展和末端配送合作提供支持。",
+      "Co-founded and led the development of an AI-powered emotional wellness product that combines guided AI support with community engagement.": "联合创立并主导开发一款 AI 情绪健康产品，将引导式 AI 支持与社群互动相结合。",
+      "Advanced the product from concept through Alpha testing and owned product requirements, software development, user feedback programs, and the post-launch growth strategy.": "推动产品从概念阶段进入 Alpha 测试，并负责产品需求、软件开发、用户反馈机制和上线后的增长策略。",
+      "Built the pre-launch community and generated more than 2,000 waitlist signups before public release.": "搭建上线前用户社群，在公开发布前获得 2,000 余名候补用户。",
+      "Developing interactive web GIS applications with React and Mapbox/ArcGIS APIs to visualize complex spatial datasets for urban research.": "使用 React 与 Mapbox/ArcGIS API 开发交互式 Web GIS 应用，为城市研究呈现复杂空间数据。",
+      "Designing spatial data pipelines and optimizing PostGIS/PostgreSQL databases for large-scale geographic data.": "设计空间数据管线并优化 PostGIS/PostgreSQL 数据库，以支持大规模地理数据处理。",
+      "Collaborating with faculty researchers to translate spatial models into intuitive user interfaces that support data-driven decisions.": "与教师研究团队合作，将空间分析模型转化为直观的用户界面，支持数据驱动决策。",
+      "Led the end-to-end lifecycle of three digital products, aligned cross-functional teams, and achieved 100% on-time delivery with 90% client satisfaction.": "主导三款数字产品的端到端生命周期，推动跨职能团队协作，实现 100% 按时交付和 90% 客户满意度。",
+      "Served as product manager for China Telecom AI's \"Xirang\" MaaS project, resolved more than 12 cross-system compatibility and access issues, and completed module integration three days ahead of schedule.": "担任中国电信人工智能公司“息壤”MaaS 项目产品经理，解决 12 项以上跨系统兼容与权限问题，并使模块集成提前三天完成。",
+      "Delivered English-language technical presentations to government investment funds in Saudi Arabia and Brazil, contributing to two international cooperation agreements.": "面向沙特和巴西的政府投资机构开展英文技术方案汇报，推动达成两项国际合作协议。",
+      "Supported requirements analysis for government solutions, prepared functional checklists for two major projects, and contributed to initial proposals.": "参与政务解决方案需求分析，为两个重点项目梳理功能清单并支持初步方案编制。",
+      "Presented products at grain and oil industry exhibitions and generated three qualified government client leads.": "在粮油行业展会开展产品演示，并获得三个有效政府客户线索。",
+      "Designed tokenization rules for more than 2 million unstructured text records used in a government generative AI model, improving precision and recall by 12%.": "为政务生成式 AI 模型设计非结构化文本切分规则，处理超过 200 万条记录，使精确率和召回率提升 12%。",
+      "Developed a distributed Java crawler covering 31 procurement platforms and handled complex anti-scraping controls.": "开发覆盖 31 个招投标平台的分布式 Java 爬虫，并处理复杂的反爬机制。",
+      "Built Python validation tools that reduced monetary errors below 1% and achieved 90% clause coverage in tender monitoring.": "开发 Python 校验工具，将金额误差控制在 1% 以内，并在招投标监测中实现 90% 的条款覆盖率。",
+      "Processed more than 100 GB of multisource satellite imagery with Python and produced more than 20 visualization dashboards.": "使用 Python 处理超过 100 GB 的多源卫星影像，并制作 20 余个数据可视化看板。",
+      "Developed ArcGIS-based spatial models that improved land-area calculation efficiency by 30% for government planning.": "开发基于 ArcGIS 的空间模型，将土地面积计算效率提升 30%，为政府规划提供支持。",
+      "02 / Selected Work": "02 / 代表项目",
+      "FOCUS 01": "方向 01",
+      "FOCUS 02": "方向 02",
+      "Product Management": "产品管理",
+      "Program Delivery": "项目交付",
+      "Program execution, stakeholder alignment, and cross-functional delivery.": "项目执行、利益相关方协同与跨职能交付。",
+      "Co-led end-to-end delivery across the MaaS platform and AI infrastructure, managed development sprints across eight workstreams, and completed key module integration three days ahead of schedule.": "共同负责 MaaS 平台与 AI 基础设施的端到端交付，管理八条工作流的开发迭代，并使关键模块集成提前三天完成。",
+      "AI products, intelligent systems, and spatial data solutions.": "AI 产品、智能系统与空间数据解决方案。",
+      "William AI | Emotional Wellness Platform": "William AI | AI 情绪健康平台",
+      "Co-founded William AI and led the product from initial concept through completion of the Alpha release. Responsibilities include product discovery, software development, community operations, and planning the post-launch product-led growth strategy.": "联合创立 William AI，并推动产品从初始概念完成 Alpha 版本。主要负责产品探索、软件开发、社群运营，以及上线后的产品驱动增长策略规划。",
+      "Government AI Suite | Smart Assessment and Fire Safety Cloud": "政务 AI 套件 | 智能评估与消防安全云",
+      "Led the development of AI-enabled fire safety assessment modules and supporting cloud infrastructure for government use cases.": "主导面向政务场景的 AI 消防安全评估模块及配套云基础设施建设。",
+      "Designed an integrated air-ground inspection and dispatch system supporting multi-robot coordination, real-time sensor monitoring, and AI-assisted anomaly detection across industrial sites.": "设计空地一体化巡检与调度系统，支持多机器人协同、传感器实时监测和工业场景的 AI 辅助异常识别。",
+      "Intelligent Tender Management and Evaluation System": "智能招投标管理与评审系统",
+      "Designed an AI-enabled tender management platform for enterprise and government clients. Core capabilities include automated document generation, AI-assisted parsing and scoring, source-document verification, similarity detection, and real-time vendor ranking.": "面向企业和政府客户设计 AI 招投标管理平台，核心能力包括文档自动生成、AI 辅助解析与评分、原文核验、相似度检测和供应商实时排名。",
+      "Improved LSTM forecasting accuracy by 10%, processed more than 100 GB of spatial data, and coordinated cross-functional delivery across all system modules.": "将 LSTM 预测准确率提升 10%，处理超过 100 GB 的空间数据，并协调各系统模块的跨职能交付。",
+      "Led market research and system architecture design for large-scale drone fleet management. Implemented collaborative mission-planning algorithms and real-time command protocols for cross-regional UAV operations.": "负责大型无人机集群管理的市场调研和系统架构设计，并实现协同任务规划算法与跨区域无人机实时指挥协议。",
+      "🏆 National Grand Prize · 19th Challenge Cup | Top 1% of 7,000+ teams": "🏆 国家级特等奖 · 第十九届“挑战杯” | 全国 7,000 余支队伍前 1%",
+      "🏆 National Third Prize · 2024 | Top 3% of 8,801 teams": "🏆 国家级三等奖 · 2024 | 全国 8,801 支队伍前 3%",
+      "05 / Honors": "05 / 荣誉奖项",
+      "Awards and Recognition": "荣誉与奖项",
+      "National Grand Prize, China": "中国国家级特等奖",
+      "19th \"Challenge Cup\" Special Competition · Ranked in the top 1% among more than 7,000 teams nationwide.": "第十九届“挑战杯”专项赛，全国 7,000 余支队伍前 1%。",
+      "China National Third Prize": "中国国家级三等奖",
+      "National Third Prize, China": "中国国家级三等奖",
+      "China University Service Outsourcing Innovation and Entrepreneurship Competition · Ranked in the top 3% among 8,801 teams nationwide.": "中国大学生服务外包创新创业大赛，全国 8,801 支队伍前 3%。",
+      "Zhejiang Provincial Second Prize": "浙江省二等奖",
+      "Second Prize, Zhejiang Province": "浙江省二等奖",
+      "14th National University E-commerce Innovation, Creativity and Entrepreneurship Challenge.": "第十四届全国大学生电子商务创新、创意及创业挑战赛。",
+      "07 / Research and Publications": "07 / 研究与成果",
+      "Research Publications and Software Copyrights": "学术论文与软件著作权",
+      "Multisource Remote Sensing Monitoring Methods for Water Quality in Wetland Lake Chains...": "湿地湖链水质多源遥感监测方法……",
+      "06 / Certifications": "06 / 证书",
+      "Official ETS score report available": "可提供 ETS 官方成绩单",
+      "Generative AI Leadership Program": "生成式 AI 领导力项目",
+      "MARCH 2026": "2026 年 3 月",
+      "Registration No. 2024SR0929419 · July 2024": "登记号：2024SR0929419 · 2024 年 7 月",
+      "Registration No. 2023SR1728027 · December 2023": "登记号：2023SR1728027 · 2023 年 12 月",
+      "Registration No. 2023SR1785807 · December 2023": "登记号：2023SR1785807 · 2023 年 12 月",
+      "08 / Activities": "08 / 社会活动",
+      "Public Engagement and Leadership": "公共参与与领导实践",
+      "OCT 2022": "2022 年 10 月",
+      "19th Asian Games Theme Song Music Video": "第十九届亚运会主题曲 MV",
+      "Selected to perform in the official theme song music video and torch relay promotional film. Received recognition from the Organizing Committee for outstanding performance.": "入选官方主题曲 MV 与火炬传递宣传片拍摄，并因表现突出获得组委会认可。",
+      "09 / Contact": "09 / 联系我",
+      "Open to product management and growth opportunities, as well as conversations about AI products, user research, and go-to-market strategy.": "期待产品管理与增长相关的工作机会，也欢迎围绕 AI 产品、用户研究和市场进入策略展开交流。",
+      "Product management · user growth · AI systems": "产品管理 · 用户增长 · AI 系统",
+      "AI Infrastructure": "AI 基础设施",
+      "GenAI": "生成式 AI",
+      "Digital Twin": "数字孪生",
+      "Spatiotemporal": "时空计算",
+      "Robotics": "机器人",
+      "UAV": "无人机",
+      "I translate complex user needs into well-defined products and measurable growth strategies. My experience includes advancing William AI from concept to alpha with more than 2,000 waitlist signups, leading end-to-end digital product delivery, and supporting international market expansion.": "我将复杂的用户需求转化为定义清晰的产品和可衡量的增长策略。我的经验包括推动 William AI 从概念阶段进入 Alpha 测试并获得 2,000 余名候补用户，主导数字产品的端到端交付，以及支持国际市场拓展。",
+      "Led user research, requirements definition, roadmap planning, alpha testing, and launch preparation. Coordinated eight AI infrastructure workstreams and translated technical constraints into practical product decisions.": "负责用户研究、需求定义、路线图规划、Alpha 测试与上线准备；协调八条 AI 基础设施工作流，并将技术约束转化为可执行的产品决策。",
+      "Advanced the product from concept through alpha testing and owned product requirements, software development, user feedback programs, and the post-launch growth strategy.": "推动产品从概念阶段进入 Alpha 测试，并负责产品需求、软件开发、用户反馈机制和上线后的增长策略。",
+      "Co-founded William AI and led the product from initial concept through completion of the alpha release. Responsibilities include product discovery, software development, community operations, and planning the post-launch product-led growth strategy.": "联合创立 William AI，并推动产品从初始概念完成 Alpha 版本。主要负责产品探索、软件开发、社群运营，以及上线后的产品驱动增长策略规划。"
     };
 
     const translatableTextNodes = [];
@@ -2503,7 +2906,7 @@
         entry.node.nodeValue = currentLanguage === 'zh' ? entry.chinese : entry.english;
       });
       document.documentElement.lang = currentLanguage === 'zh' ? 'zh-CN' : 'en';
-      document.title = currentLanguage === 'zh' ? 'Regina Jin — 空间数据科学与 AI 产品' : 'Regina Jin — Spatial Data Scientist';
+      document.title = currentLanguage === 'zh' ? 'Regina Jin | 产品经理与增长策略' : 'Regina Jin | Product Manager and Growth Strategist';
       document.querySelectorAll('.language-switch button').forEach(button => {
         const active = button.dataset.lang === currentLanguage;
         button.classList.toggle('active', active);
@@ -2554,6 +2957,12 @@
       projectHeading.before(productHeading, productGrid);
     }
 
+    const publicationsSection = document.querySelector('#publications');
+    const certificationsSection = document.querySelector('#certifications');
+    if (publicationsSection && certificationsSection) {
+      publicationsSection.before(certificationsSection);
+    }
+
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const revealItems = document.querySelectorAll('.reveal');
     if (reducedMotion) {
@@ -2581,6 +2990,87 @@
       });
     }, { rootMargin: '-35% 0px -55%', threshold: 0 });
     sections.forEach(section => navObserver.observe(section));
+
+    const progressBar = document.querySelector('.scroll-progress');
+    let progressFrame = null;
+    const updateScrollProgress = () => {
+      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+      progressBar?.style.setProperty('--scroll-progress', `${progress}%`);
+      progressFrame = null;
+    };
+    window.addEventListener('scroll', () => {
+      if (progressFrame === null) progressFrame = requestAnimationFrame(updateScrollProgress);
+    }, { passive: true });
+    updateScrollProgress();
+
+    const metricValues = document.querySelectorAll('.metric-value[data-count]');
+    const formatMetric = (value, element) => {
+      const suffix = element.dataset.suffix || '';
+      if (element.dataset.compact === 'true') {
+        const compactValue = value / 1000;
+        const precision = compactValue < 1 ? 1 : 0;
+        return `${compactValue.toFixed(precision).replace(/\.0$/, '')}K${suffix}`;
+      }
+      return `${Math.round(value)}${suffix}`;
+    };
+    const finishMetric = element => {
+      element.textContent = formatMetric(Number(element.dataset.count), element);
+    };
+    if (reducedMotion) {
+      metricValues.forEach(finishMetric);
+    } else {
+      const metricObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          const element = entry.target;
+          const target = Number(element.dataset.count);
+          const startTime = performance.now();
+          const duration = 1100;
+          const animateMetric = now => {
+            const elapsed = Math.min(1, (now - startTime) / duration);
+            const eased = 1 - Math.pow(1 - elapsed, 3);
+            element.textContent = formatMetric(target * eased, element);
+            if (elapsed < 1) requestAnimationFrame(animateMetric);
+            else finishMetric(element);
+          };
+          requestAnimationFrame(animateMetric);
+          metricObserver.unobserve(element);
+        });
+      }, { threshold: .55 });
+      metricValues.forEach(element => metricObserver.observe(element));
+    }
+
+    const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    if (!reducedMotion && finePointer) {
+      document.querySelectorAll('.impact-story, .project-card').forEach(card => {
+        card.classList.add('interactive-card');
+        card.addEventListener('pointermove', event => {
+          const rect = card.getBoundingClientRect();
+          const x = (event.clientX - rect.left) / rect.width;
+          const y = (event.clientY - rect.top) / rect.height;
+          card.style.setProperty('--pointer-x', `${x * 100}%`);
+          card.style.setProperty('--pointer-y', `${y * 100}%`);
+          card.style.setProperty('--tilt-x', `${(0.5 - y) * 4}deg`);
+          card.style.setProperty('--tilt-y', `${(x - 0.5) * 4}deg`);
+        });
+        card.addEventListener('pointerleave', () => {
+          card.style.setProperty('--tilt-x', '0deg');
+          card.style.setProperty('--tilt-y', '0deg');
+        });
+      });
+
+      const impactSection = document.querySelector('.impact');
+      impactSection?.addEventListener('pointermove', event => {
+        const rect = impactSection.getBoundingClientRect();
+        impactSection.style.setProperty('--spot-x', `${(event.clientX - rect.left) / rect.width * 100}%`);
+        impactSection.style.setProperty('--spot-y', `${(event.clientY - rect.top) / rect.height * 100}%`);
+      });
+      impactSection?.addEventListener('pointerleave', () => {
+        impactSection.style.setProperty('--spot-x', '86%');
+        impactSection.style.setProperty('--spot-y', '10%');
+      });
+    }
   </script>
 </body>
 </html>
