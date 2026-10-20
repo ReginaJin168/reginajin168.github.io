@@ -213,7 +213,7 @@ def build(path: Path):
         Paragraph("Regina Jin", name_style),
         Paragraph(
             '858-261-8053 &nbsp;&nbsp;|&nbsp;&nbsp; '
-            '<link href="mailto:Reginaji@usc.edu" color="#008E83">Reginaji@usc.edu</link> &nbsp;&nbsp;|&nbsp;&nbsp; '
+            '<link href="mailto:yubingji@usc.edu" color="#008E83">yubingji@usc.edu</link> &nbsp;&nbsp;|&nbsp;&nbsp; '
             '<link href="https://reginajin168.github.io" color="#008E83">reginajin168.github.io</link>',
             contact_style,
         ),
@@ -227,7 +227,7 @@ def build(path: Path):
     story.extend(section("Profile"))
     story.append(
         Paragraph(
-            "Product builder and spatial data scientist with experience across AI products, cross-border business development, and technical delivery. Co-founder of William AI, combining hands-on software development with user discovery, community building, and product-led growth.",
+            "Product and growth practitioner with experience across spatial data science, enterprise AI delivery, cross-border logistics expansion, and overseas GTM for WoafMeow, a funded senior-dog-care venture with a 13,000+ pet-owner community.",
             summary_style,
         )
     )
@@ -256,26 +256,26 @@ def build(path: Path):
             "UniUni",
             "Remote",
             "Specialist of Region Expansion & CDC (Intern)",
-            "Jul 2026 - Present",
+            "Jul 2026 - Sep 2026",
             [
                 "Built a cross-border prospecting pipeline by screening approximately <b>5,000 logistics companies</b> across North America and Europe and identifying decision-makers in operations, supply chain, and partnerships.",
-                "Executed approximately <b>3,500 targeted outreach attempts</b>; converted all 3 responses into discovery meetings, achieving a <b>100% response-to-meeting conversion rate</b>.",
+                "Segmented approximately <b>3,500 target accounts</b>; converted 3 qualified positive responses into discovery meetings and synthesized customer signals for regional expansion.",
                 "Qualified partnership interest and documented account intelligence to support regional expansion and last-mile logistics business development.",
             ],
         )
     )
     story.append(
         entry(
-            "William AI",
-            "Los Angeles / Remote",
-            "Co-founder & Product Lead",
-            "May 2026 - Present",
+            "WoafMeow",
+            "Overseas Markets",
+            "GTM & International Growth",
+            "2026 - Present",
             [
-                "Co-founded an AI-powered emotional wellness product that combines guided AI support with community-based engagement.",
-                "Led the product from concept through <b>Alpha testing</b>; owned requirements, software development, user feedback loops, community operations, and the post-launch growth roadmap.",
-                "Built a pre-launch community and acquired <b>2,000+ waitlist signups</b> ahead of public release.",
+                "Support overseas GTM for a funded senior-dog-care venture with a <b>13,000+ pet-owner community</b>.",
+                "Segment prospective users by care needs and feedback; monitor website click-through and Discord-to-coffee-chat registration conversion.",
+                "A/B test growth messaging and translate recurring customer needs into product priorities for the WoafyPet Smart Bed and Smart Base.",
             ],
-            link="https://www.iamwilliam.xyz",
+            link="https://www.woafmeow.com/",
         )
     )
     story.append(
