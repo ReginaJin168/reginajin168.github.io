@@ -1209,7 +1209,7 @@
     .work-track-heading p { color: #708493; font-size: .86rem; }
     .product-heading .work-track-index { color: #526cff; }
     .product-heading h3::after {
-      content: '01';
+      content: '02';
       float: right;
       color: rgba(82,108,255,.13);
       font-size: 3.3rem;
@@ -2096,7 +2096,7 @@
     
     <!-- Project -->
     <div class="work-track-heading reveal">
-      <span class="work-track-index">FOCUS 02</span>
+      <span class="work-track-index">FOCUS 01</span>
       <div>
         <h3>Program Delivery</h3>
         <p>Program execution, stakeholder alignment, and cross-functional delivery.</p>
@@ -2137,7 +2137,7 @@
     </div>
 
     <div class="work-track-heading reveal product-heading">
-      <span class="work-track-index">FOCUS 01</span>
+      <span class="work-track-index">FOCUS 02</span>
       <div>
         <h3>Product Management</h3>
         <p>AI products, intelligent systems, and spatial data solutions.</p>
@@ -3023,12 +3023,22 @@
       educationSection.before(projectsSection);
     }
 
-    const projectHeading = document.querySelector('#projects .work-track-heading:not(.product-heading)');
-    const projectGrid = document.querySelector('#projects .project-only-grid');
-    const productHeading = document.querySelector('#projects .product-heading');
     const productGrid = document.querySelector('#projects .product-grid');
-    if (projectHeading && projectGrid && productHeading && productGrid) {
-      projectHeading.before(productHeading, productGrid);
+    if (productGrid) {
+      const cards = [...productGrid.querySelectorAll(':scope > .project-card')];
+      const priority = [
+        'Government AI Suite | Smart Assessment and Fire Safety Cloud',
+        'Intelligent Tender Management and Evaluation System',
+        'Autonomous Inspection System',
+        'Marine Eco-Remote Sensing Big Data System',
+        'WoafMeow | Senior-Dog Care Platform',
+        'Playlovin | AI Video Ad Generation',
+        'Intelligent UAV Collaborative Management System'
+      ];
+      for (const title of priority) {
+        const card = cards.find(item => item.querySelector('.project-title')?.textContent.trim() === title);
+        if (card) productGrid.appendChild(card);
+      }
     }
 
     const publicationsSection = document.querySelector('#publications');
